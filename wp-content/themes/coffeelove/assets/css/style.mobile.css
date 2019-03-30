@@ -1,0 +1,101 @@
+/* ---------------------------------------------- /*
+ * Media
+/* ---------------------------------------------- */
+
+@media (max-width: 480px) {
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+
+    #products {
+        background-color: #161612;
+        background-size: 1500%;
+        background-position: 48% 0;
+    }
+
+    .carousel-inner {
+        padding: 0;
+    }
+
+    #logo-container {
+        position: relative;
+        top: 0;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 24px;
+        line-height: 28px;
+        color: #31eaf1;
+        text-transform: uppercase;
+        z-index: 10;
+    }
+
+    .header-margin-block {
+        margin-top: 150px;
+    }
+
+    .promo {
+        margin-bottom: 40px;
+    }
+
+    .action {
+        float: none;
+    }
+
+    #intro, #intro .contacts, .contacts {
+        text-align: center;
+        background: url(../images/bg4.jpg) 48% 133% no-repeat;
+        background-size: 800%;
+    }
+    #intro .promo .title {
+        font-size: 35px;
+    }
+    #intro .promo .sub-title {
+        font-size: 18px;
+    }
+
+    .promo .title,
+    #footer h2,
+    .contacts p,
+    #footer .callback .btn {
+        font-size: 24px;
+    }
+    .promo .sub-title {
+        font-size: 14px;
+    }
+    #footer .col-md-8  {
+        padding-top: 40px;
+    }
+    #footer .col-md-4 {
+        margin-top: 70px;
+    }
+
+    #footer .contacts {
+        text-align: center;
+    }
+
+    #footer .socials {
+        margin-right: 0;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .wrapper {
+        text-align: center;
+    }
+
+    #stats .stat {
+        margin: 0 0 20px;
+    }
+
+    #footer .contacts {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #footer .socials {
+        margin-right: 0;
+    }
+}

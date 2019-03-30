@@ -1,0 +1,369 @@
+/**
+ * Support: web-master72@yandex.ru;
+ * Author: web-master72
+ *
+ *
+/* ---------------------------------------------- /*
+ * General styles
+/* ---------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+body {
+    font: 300 15px/1.6 sans-serif, verdana;
+    color: #383838;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    text-decoration: none;
+    color: #00cad3;
+}
+
+hr {
+    border-top: 1px solid #161612;
+}
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    font: 400 46px/1.2 sans-serif, verdana;;
+    margin: 10px 0 25px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+/* ---------------------------------------------- /*
+ * Transition elsements
+/* ---------------------------------------------- */
+
+.navbar
+.form-control,
+.portfolio-item-description {
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    transition: all 0.125s ease-in-out 0s;
+}
+
+.portfolio-item-preview {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* ---------------------------------------------- /*
+ * Reset box-shadow
+/* ---------------------------------------------- */
+
+
+.panel
+.progress,
+.form-control,
+.modal-content,
+.form-control:hover,
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* ---------------------------------------------- /*
+ * Reset border-radius
+/* ---------------------------------------------- */
+
+
+.alert,
+.progress,
+.form-control,
+.modal-content,
+.panel-group .panel,
+.widget-social li a {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* ---------------------------------------------- /*
+ * Title styles
+/* ---------------------------------------------- */
+.font-22 {
+    font-size: 22px !important;
+}
+
+
+/* ---------------------------------------------- /*
+ * Inputs styles
+/* ---------------------------------------------- */
+
+.form-control {
+    background: #FFF;
+    border: 2px solid #C4C4C4;
+    font-size: 14px;
+    padding: 15px;
+    color: #777;
+}
+
+.input-lg, .form-horizontal .form-group-lg .form-control {
+    height: 62px;
+}
+
+.input-sm, .form-horizontal .form-group-sm .form-control {
+    height: 40px;
+    font-size: 12px;
+}
+
+/* ---------------------------------------------- /*
+ * Custom button style
+/* ---------------------------------------------- */
+
+.btn-default {
+    background: transparent;
+    border: 1px solid #383838;
+    border-radius: 0!important;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+.btn-default:hover {
+    background: #31eaf1;
+}
+.btn-lg {
+    font-size: 28px;
+}
+
+/* ---------------------------------------------- /*
+ * Alerts style
+/* ---------------------------------------------- */
+
+.alert {
+    border: 0;
+}
+
+
+/* ---------------------------------------------- /*
+ * Progress bars
+/* ---------------------------------------------- */
+
+.progress {
+    background: #E5E5E5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background: #353535;
+    box-shadow: none;
+}
+
+/* ---------------------------------------------- /*
+ * Tabs
+/* ---------------------------------------------- */
+
+.nav-pills, .nav-tabs {
+    margin-bottom: 20px;
+}
+
+.nav-pills > li > a {
+    border-radius: 3px;
+}
+
+.nav-tabs > li > a {
+    border-radius: 3px 3px 0 0;
+}
+
+/* ---------------------------------------------- /*
+ * Panels
+/* ---------------------------------------------- */
+
+.panel {
+    border: 0;
+}
+
+.panel-body {
+    background: #f5f5f5;
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+    border: 0;
+}
+
+/* ---------------------------------------------- /*
+ * Modal
+/* ---------------------------------------------- */
+
+.modal-content {
+    border: 0;
+}
+
+/* ---------------------------------------------- /*
+ * General
+/* ---------------------------------------------- */
+
+.wrapper {
+    overflow: hidden;
+}
+
+.section, .callout {
+    position: relative;
+    padding: 120px 0;
+    background: #e7e7e7;
+}
+
+.body-section {
+    position: relative;
+    padding: 50px 0 20px;
+}
+
+.callout {
+    background: #F5F5F5;
+}
+
+
+.callout-btn {
+    margin-top: 10px;
+}
+
+.rotate {
+    text-shadow: 0 0 0 !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+.long-down {
+    margin-bottom: 40px;
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0px;
+}
+
+.icon-list > li > i {
+    margin-right: 6px;
+}
+
+h3 > .fa {
+    font-size: 24px;
+    margin-right: 6px;
+}
+
+.mouse-icon {
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+}
+
+.mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 4px;
+    height: 10px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@-webkit-keyframes drop	{
+    0%   { top:5px;  opacity: 0;}
+    30%  { top:10px; opacity: 1;}
+    100% { top:25px; opacity: 0;}
+}
+
+@keyframes drop	{
+    0%   { top:5px;  opacity: 0;}
+    30%  { top:10px; opacity: 1;}
+    100% { top:25px; opacity: 0;}
+}
+
+
+.padding-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* Carousel
+/*----------------------------------------------------------------------------------------*/
+
+.carousel-indicators {
+    position: relative;
+    bottom: auto;
+}
+
+.carousel-inner {
+    /*padding: 0 50px;*/
+}
+
+.carousel-inner .item {
+    overflow: hidden;
+}
+
+.carousel-control {
+    margin: 117px 0 54px;
+    width: 50px;
+}

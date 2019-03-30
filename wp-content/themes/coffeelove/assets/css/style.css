@@ -1,0 +1,637 @@
+/* FUCKIN` SHIT */
+
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+
+.navbar {
+    background: none;
+    border-radius: 0;
+    border: 0;
+    /*padding: 20px 0;*/
+    text-transform: uppercase;
+    color: #000 !important;
+    margin: 0;
+    transition: all .5s;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active,
+.navbar-inverse .nav li a:hover,
+.navbar-inverse .nav li a:focus,
+.navbar-inverse .nav li.active{
+    background: none;
+    outline: 0;
+    color: #EF4836;
+}
+/*
+.logo {
+    width: 159px;
+    height: 159px;
+    background: url(../images/logo_preload.png) no-repeat;
+    margin-left: 150px;
+}
+*/
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+}
+
+
+.navbar-custom .navbar-brand {
+    font: 700 18px/1.2 'Montserrat', serif, sans-serif;
+    color: #FFF;
+}
+
+.navbar-custom .navbar-nav > li.active {
+    border-bottom: 3px solid #FFF;
+}
+
+.navbar-custom .navbar-header .navbar-logo > img {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #FFF;
+}
+
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+    color: #FFF;
+    font-size: 12px;
+    font-family: 'Verdana', serif, sans-serif;
+}
+
+.navbar-color,
+.custom-collapse {
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    padding: 0;
+}
+
+.navbar-color .navbar-brand,
+.custom-collapse .navbar-brand,
+.navbar-color .navbar-nav > li > a,
+.navbar-color .navbar-nav .dropdown-menu > li > a,
+.custom-collapse .navbar-nav > li > a,
+.custom-collapse .navbar-nav .dropdown-menu > li > a {
+    color: #222;
+}
+
+
+.navbar-color .navbar-nav > li.active {
+    border-bottom: 3px solid #222;
+}
+
+.custom-collapse .navbar-nav {
+    text-align: left;
+}
+
+.custom-collapse .navbar-nav > li.active {
+    border: 0;
+}
+
+.navbar-color .navbar-toggle .icon-bar,
+.custom-collapse .navbar-toggle .icon-bar {
+    background: #222;
+}
+
+/* ---------------------------------------------- /*
+ * Intro
+/* ---------------------------------------------- */
+
+#intro {
+    text-align: left;
+    color: #FFF;
+    background: url(../images/bg4.jpg) 100% 51% no-repeat;
+}
+
+#logo-container {
+    position: absolute;
+    top: 20px;
+    margin-left: 50px;
+    width: 250px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #31eaf1;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+#logo {
+    display: inline-block;
+    height: 159px;
+    width: 159px;
+    margin-bottom: 20px;
+    background: url(../images/logo.png) no-repeat;
+}
+
+#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
+    color: #FFF;
+}
+
+.header-margin-block {
+    margin-top: 250px;
+}
+
+#intro .contacts {
+    font-size: 34px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.promo {
+    text-transform: uppercase;
+}
+.promo {
+    text-transform: uppercase;
+}
+.promo .phone-style {
+    font-size: 24px;
+}
+.promo .title {
+    margin-bottom: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.promo .subtitle {
+    font-size: 18px;
+}
+
+#intro .promo .title {
+    font-size: 35px;
+}
+
+.hello {
+    margin: 0 0 100px;
+}
+
+#intro .action {
+    padding: 30px;
+    background: rgba(0, 202, 211, 0.6);
+    color: #000;
+    border-radius: 15px;
+}
+
+/* ---------------------------------------------- /*
+ * ???
+/* ---------------------------------------------- */
+.action {
+    display: inline-block;
+    width: 275px;
+    padding: 0 20px 20px;
+
+    float: right;
+}
+
+.action-title {
+    font-size: 48px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.action-text {
+    font-size: 18px;
+}
+.action-image {
+    margin: 20px 0 20px 0;
+    height: 214px;
+    background: url(../images/action-coffemachine.png) no-repeat center;
+}
+.btn-default{
+    color: #000;
+}
+
+/* ---------------------------------------------- /*
+ * ???
+/* ---------------------------------------------- */
+.how-it-works-items > div {
+    margin: 50px 22px 0 21px;
+    padding-top: 122px;
+    font-size: 18px;
+    text-align: center;
+}
+.how-it-works-items .step-1 {
+    background: url(../images/icon-list.png) no-repeat 50% 0%;
+}
+.how-it-works-items .step-2 {
+    background: url(../images/icon-operator.png) no-repeat 50% 0%;
+}
+.how-it-works-items .step-3 {
+    background: url(../images/icon-coffeemacine.png) no-repeat 50% 0%;
+}
+.how-it-works-items .step-4 {
+    background: url(../images/icon-car.png) no-repeat 50% 0%;
+}
+.how-it-works-items .step-5 {
+    margin-right: 0;
+    background: url(../images/icon-cup.png) no-repeat 50% 0%;
+}
+
+@media (max-width: 480px) {
+    #how-it-works .how-it-works-items .step-5 {
+        margin-right: 22px;
+    }
+}
+
+/* ---------------------------------------------- /*
+ * ?????
+/* ---------------------------------------------- */
+#stats .stat-title {
+    margin-top: 25px;
+}
+
+#stats .stat-item {
+    text-align: center;
+    margin: 25px 0;
+}
+
+#stats .stat-item .timer {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#stats .stat-item p {
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.cl-coffee-machine {
+    height: 52px;
+    width: 53px;
+    background: url(../images/icon-coffeemacine-stats.png) no-repeat;
+}
+.cl-smile {
+    height: 54px;
+    width: 54px;
+    background: url(../images/icon-smile.png) no-repeat;
+}
+
+
+/* ---------------------------------------------- /*
+ * ???/* ---------------------------------------------- */
+#about_us {
+    font-size: 20px;
+}
+#about_us .fa {
+    font-size: 30px;
+}
+
+/* ---------------------------------------------- /*
+ * ?????
+/* ---------------------------------------------- */
+
+/*????? ?? ??? ???? ?? */
+.flip-container {
+    perspective: 1000;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 400px;
+    height: 50px;
+}
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.front {
+    z-index: 2;
+}
+.back {
+    transform: rotateY(180deg);
+}
+/*??? ???? */
+
+
+.item-about {
+    cursor: pointer;
+}
+
+#products {
+    min-height: 1153px;
+    background: url(../images/bg4.jpg);
+    background-size: 200%;
+    background-position: 81% 0;
+}
+
+#products h2 {
+    color: #FFFFFF;
+}
+
+#coffee .carousel-inner {
+    min-height: 426px;
+}
+
+.product {
+    background: rgba(255,255,255, 0.8);
+    padding: 10px 0;
+    margin: 1px -14px;
+    height: 211px;
+}
+.product .product-image {
+    height: 135px;
+    overflow: hidden;
+}
+.product .product-image img {
+    max-width: 100px;
+    max-height: 135px
+}
+.product .specs {
+    max-height: 135px;
+    overflow: hidden;
+}
+.product .specs .row div {
+    max-height: 60px;
+    overflow: hidden;
+    line-height: 26px;
+    font-size: 13px;
+    color: #808080;
+}
+.product .title {
+    margin-top: 5px;
+    font-size: 18px!important;
+    font-weight: 500;
+    max-height: 60px;
+    color: #383838!important;
+}
+.product .buttons {
+    bottom: -15px;
+}
+.products .product .buttons .btn {
+    width: 40%;
+    margin: 15px 5px;
+}
+
+.notation {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------- /*
+ * ??????
+/* ---------------------------------------------- */
+#coffee-machines .coffee-machine:hover {
+    box-shadow: 0 3px 20px 0 rgba(105,72,32,1);
+}
+#coffee-machines .coffee-machine:hover .coffee-machine-pic img{
+    transform: scale(1.1, 1.1);
+}
+
+#coffee-machines .coffee-machine .row {
+    text-align: center;
+    background: rgba(255,255,255, 0.3);
+    border: 1px solid rgba(0,0,0,0.6)
+}
+
+#coffee-machines .coffee-machine .coffee-machine-pic {
+    height: 320px;
+}
+#coffee-machines .coffee-machine .price, #coffee-machines .coffee-machine .coffee-machine-title {
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#coffee-machines .coffee-machine .coffee-machine-pic img {
+    max-width: 230px;
+    max-height: 230px;
+    margin: 30px 0 10px;
+    transition: all 0.3s;
+}
+#coffee-machines .coffee-machine .coffee-machine-price {
+    padding: 15px 0;
+    background: rgba(255,255,255, 0.9);
+    border: 1px solid rgba(0,0,0,0.6);
+    border-top: 0;
+    font-size: 24px;
+
+}
+
+/* ---------------------------------------------- /*
+ * Clients
+/* ---------------------------------------------- */
+#clients .client-logo-container {
+    min-height: 154px;
+    margin: 1px;
+    border: 1px solid #454444;
+}
+
+#clients .client-logo-container img {
+    max-height: 150px;
+    max-width: 150px;
+    margin: 1px;
+}
+
+
+/* ============================== ??? =========================== */
+
+#footer {
+    background: #ececec;
+    padding: 60px 0 0;
+    color: #212121;
+    text-transform: uppercase;
+}
+#footer .title {
+    margin-top: 40px;
+}
+#footer .copy {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* #footer .col-md-8  {
+    padding-top: 24px;
+} */
+#footer .callback {
+    margin-top: 25px;
+}
+.contacts {
+    text-align: right;
+    margin-bottom: 15px;
+}
+.contacts p {
+    font-size: 25px;
+}
+.contacts .coffee-mail{
+    font-size: 19px;
+}
+
+#footer .socials {
+    margin-right: 100px;
+}
+#footer .socials a {
+    color: #fff;
+    border: 1px solid #212121;
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #212121;
+    transition: all .3s;
+}
+#footer .socials a:hover{
+    background-color: #6186ad;
+    border: 1px solid #fff;
+    transform: scale(1.2, 1.2);
+    transform: rotate(360deg);
+}
+
+#counters {
+    display: none;
+}
+
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+#status, .status-mes {
+    background-image: url(../images/logo_preload.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 159px;
+    top: 50%;
+    left: 50%;
+    margin: -79px 0 0 -80px;
+    position: absolute;
+    width: 159px;
+}
+
+.status-mes {
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+
+
+/* ---------------------------------------------- /*
+ * Callback form
+/* ---------------------------------------------- */
+
+#callback-modal .modal-dialog {
+    max-width: 400px;
+}
+
+[data-type="about:photo"] {
+    margin-bottom: 30px;
+}
+
+/* Wobble Vertical ???? ??? ????*/
+
+@-webkit-keyframes wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes wobble-vertical {
+    16.65% {
+        -webkit-transform: translateY(8px);
+        -ms-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        transform: translateY(1px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.wobble-vertical {
+    display: inline-block;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.wobble-vertical:hover {
+    -webkit-animation-name: wobble-vertical;
+    animation-name: wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}

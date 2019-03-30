@@ -1,4 +1,6 @@
 /docker/mysql
 /wp-content/uploads
-/wp-content/themes/coffeelove/assets
+/wp-content/themes/coffeelove/__functions.php
+/wp-content/themes/coffeelove/_functions.php
 .idea
+wp-config.php
