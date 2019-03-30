@@ -3,7 +3,7 @@
 
     <!-- Preloader -->
 
-    <div id="preloader" style="display: none;">
+    <div id="preloader">
         <div id="status">
             <div class="status-mes"></div>
         </div>
@@ -2457,4 +2457,4 @@
         </div>
 
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
