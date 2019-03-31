@@ -69,6 +69,33 @@ add_action('init', function() {
         'show_in_nav_menus'   => true,
     ]);
 
+    register_post_type('sale', [
+        'labels' => [
+            'name'               => 'Акция', // основное название для типа записи
+            'singular_name'      => 'Акция', // название для одной записи этого типа
+            'add_new'            => 'Добавить Акция', // для добавления новой записи
+            'add_new_item'       => 'Добавление Акция', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование Акция', // для редактирования типа записи
+            'new_item'           => 'Новая Акция', // текст новой записи
+            'view_item'          => 'Смотреть Акция', // для просмотра записи этого типа.
+            'search_items'       => 'Искать Акция', // для поиска по этим типам записи
+            'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+            'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+            'parent_item_colon'  => '', // для родителей (у древовидных типов)
+            'menu_name'          => 'Акция', // название меню
+        ],
+        'public'              => true,
+        'show_in_menu'        => 'coffee-love',
+        'menu_position'       => 5,
+        'menu_icon'           => 'dashicons-format-quote',
+        'hierarchical'        => false,
+        'supports'            => array('title', 'editor', 'thumbnail'),
+        'show_in_nav_menus'   => true,
+        'capability_type' => 'post',
+        'capabilities' => array('create_posts' => false, 'delete_posts' => false ),
+        'map_meta_cap' => true,
+    ]);
+
     register_taxonomy('coffee-type', array('coffee'), array(
         'labels'                => array(
             'name'              => 'Тип кофе',
@@ -114,16 +141,6 @@ add_action('init', function() {
     ));
 
 
-
-    function show_coffee(){
-        $args = [
-            'orderby'   => 'date',
-            'order'     => 'DESC',
-            'post_type' => 'coffee'
-        ];
-
-        return get_posts($args);
-    }
 });
 
 
