@@ -133,33 +133,6 @@
     </div>
 </div>
 
-
-<!-- Javascript files -->
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!-- Background slider -->
-<script src="./assets/js/jquery.backstretch.min.js"></script>
-<!-- Text rotator -->
-<script src="./assets/js/jquery.simple-text-rotator.min.js"></script>
-<!-- Waypoints -->
-<script src="./assets/js/jquery.waypoints.js"></script>
-<!-- CountTo  -->
-<script src="./assets/js/jquery.countTo.js"></script>
-<!-- WOW - Reveal Animations When You Scroll -->
-<script src="./assets/js/wow.min.js"></script>
-<!-- Smooth scroll -->
-<script src="./assets/js/smoothscroll.js?312312312"></script>
-<!-- Custom scripts -->
-<script src="./assets/js/custom.js"></script>
-
-
-<!-- Landing scripts -->
-<script src="./assets/js/landing.js"></script>
-
-
-
 <div class="hide">
     <!-- Yandex.Metrika informer -->
     <a href="https://metrika.yandex.ru/stat/?id=27921684&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/27921684/3_0_9FFFF4FF_7FFFD4FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:27921684,lang:'ru'});return false}catch(e){}"/></a>

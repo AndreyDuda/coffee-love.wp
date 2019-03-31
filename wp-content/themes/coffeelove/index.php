@@ -71,6 +71,14 @@
                                     <span class="timer" data-to="230"></span>
                                     <span class="timer" data-to="85"></span>
                                 </div>
+                                <div>
+                                    +
+                                    <span class="timer" data-to="38"></span>
+                                    (0<span class="timer" data-to="97"></span>)
+                                    <span class="timer" data-to="62"></span>
+                                    <span class="timer" data-to="124"></span>
+                                    <span class="timer" data-to="22"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12">

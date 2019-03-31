@@ -29,27 +29,26 @@
 
     <base href="http://coffee-love.com.ua/">
 
-    <!-- CSS -->
-    <!-- Cuprum -->
-    <link href='//fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
 
-    <!-- Latest compiled and minified CSS -->
+   <!-- <link href='//fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <!-- Simple text rotator -->
+
     <link href="assets/css/simpletextrotator.css" rel="stylesheet">
 
-    <!-- Font Awesome CSS -->
+
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Animate css -->
+
     <link href="assets/css/animate.css" rel="stylesheet">
 
-    <!-- Custom styles CSS -->
+
     <link href="assets/css/style.base.css" rel="stylesheet" media="screen">
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
     <link href="assets/css/style.mobile.css" rel="stylesheet" media="screen">
-
+-->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
