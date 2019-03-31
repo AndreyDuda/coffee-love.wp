@@ -43,7 +43,7 @@
 
     #intro, #intro .contacts, .contacts {
         text-align: center;
-        background: url(../images/bg4.jpg) 48% 133% no-repeat;
+        background: url(../image/bg4.jpg) 48% 133% no-repeat;
         background-size: 800%;
     }
     #intro .promo .title {

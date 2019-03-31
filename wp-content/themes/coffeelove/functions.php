@@ -1,6 +1,7 @@
 <?php
 
 include_once (__DIR__ . '/inc/functions/admin_functions.php');
+include_once (__DIR__ . '/inc/functions/customizer_functions.php');
 
 add_action('wp_enqueue_scripts', function (){
 
