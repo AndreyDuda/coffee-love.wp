@@ -89,7 +89,7 @@ add_action('init', function() {
 
     ));
 
-    register_taxonomy('country', array('coffee'), array(
+    register_taxonomy('country_m', array('coffee_machine'), array(
         'labels'                => array(
             'name'              => 'Страна',
             'singular_name'     => 'Страна',
@@ -108,6 +108,18 @@ add_action('init', function() {
         'hierarchical'          => false
 
     ));
+
+
+
+    function show_coffee(){
+        $args = [
+            'orderby'   => 'date',
+            'order'     => 'DESC',
+            'post_type' => 'coffee'
+        ];
+
+        return get_posts($args);
+    }
 });
 
 
