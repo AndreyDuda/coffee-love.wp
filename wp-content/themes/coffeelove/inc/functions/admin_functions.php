@@ -105,7 +105,11 @@ add_action('init', function() {
         'description'           => '', // описание таксономии
         'public'                => true,
         'show_in_menu'          => 'coffee-love',
-        'hierarchical'          => false
+        'hierarchical'          => false,
+        'rewrite'               => false,
+        'query'                 => array(
+            ''
+        )
 
     ));
 
