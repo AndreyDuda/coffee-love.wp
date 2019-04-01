@@ -29,7 +29,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="scroll-menu nav navbar-nav navbar-right">
                     <li><a href="#intro">Главная</a></li>
                     <li><a href="#how-it-works">Как мы работаем</a></li>
                     <li><a href="#stats">Статистика</a></li>
