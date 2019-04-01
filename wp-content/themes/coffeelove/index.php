@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="" style="display: none" class="navbar-logo">
-                    <img src="assets/images/logo_catalog.png.pagespeed.ce.C22KUBTLun.png" alt="Coffee-Love для любителей кофе">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/logo_catalog.png.pagespeed.ce.C22KUBTLun.png" alt="Coffee-Love для любителей кофе">
                 </a>
             </div>
 
@@ -253,7 +253,7 @@
                         <div class="col-md-6 step-1 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
                             <div class="row padding-10">
                                 <p>
-                                    <img src="assets/images/icon-coffeemacine-stats.png.pagespeed.ce.BRsRXnjLJN.png" style="height: 26px;"/>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/icon-coffeemacine-stats.png.pagespeed.ce.BRsRXnjLJN.png" style="height: 26px;"/>
                                     Мы предоставляем в бесплатное пользование кофемашину при заказе от 3 кг кофе в месяц. Возможна аренда кофемашин без привязки и обязательного приобретения кофе.&nbsp;
                                 </p>
                             </div>
@@ -271,7 +271,7 @@
                         <div class="col-md-6 step-3 wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.1s">
                             <div class="row padding-10">
                                 <p>
-                                    <img src="assets/images/coffee-bean.png.pagespeed.ce.PAfQc5zKQo.png" style="height: 26px;"/>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/coffee-bean.png.pagespeed.ce.PAfQc5zKQo.png" style="height: 26px;"/>
                                     Сотрудничая с нами, Вы получаете широкий ассортимент лучших сортов натурального кофе в Одессе.
                                 </p>
                             </div>
@@ -289,7 +289,7 @@
                         <div class="col-md-6 step-4 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
                             <div class="row padding-10">
                                 <p>
-                                    <img src="assets/images/timemachine.png.pagespeed.ce.1YAnhn1FRb.png" style="height: 34px;"/>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/timemachine.png.pagespeed.ce.1YAnhn1FRb.png" style="height: 34px;"/>
                                     Вы сами выбираете сроки аренды кофемашины.
                                 </p>
                             </div>
@@ -592,73 +592,73 @@
                             <div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/photo.jpg.pagespeed.ce.dpLHeY86tD.jpg" title="ctb.centr"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/photo.jpg.pagespeed.ce.dpLHeY86tD.jpg" title="ctb.centr"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/artbilet.png.pagespeed.ce.uYS3Yiowe_.png" title="Artbilet"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/artbilet.png.pagespeed.ce.uYS3Yiowe_.png" title="Artbilet"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/alfabank2.png.pagespeed.ce._GRJ8fShGa.png" title="Alfabank"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/alfabank2.png.pagespeed.ce._GRJ8fShGa.png" title="Alfabank"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/novatek.png.pagespeed.ce.ICIjqPvsSU.png" title="Novatek"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/novatek.png.pagespeed.ce.ICIjqPvsSU.png" title="Novatek"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/Pivasov_logo_250.png.pagespeed.ce.6ra9DXxI0A.png" title="Pivasov"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/Pivasov_logo_250.png.pagespeed.ce.6ra9DXxI0A.png" title="Pivasov"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/fornetti_250_250.png.pagespeed.ce.j9T9cLBfGd.png" title="Fornetti"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/fornetti_250_250.png.pagespeed.ce.j9T9cLBfGd.png" title="Fornetti"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/83452.gif.pagespeed.ce.0WziDMSsV9.gif" title="Citrus"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/83452.gif.pagespeed.ce.0WziDMSsV9.gif" title="Citrus"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/life.png.pagespeed.ce.cSjx7uzXh5.png" title="Life"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/life.png.pagespeed.ce.cSjx7uzXh5.png" title="Life"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/Privatbank-340x286-d925.jpg.pagespeed.ce.jItxDnZhwo.jpg" title="ПриватБанк"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/Privatbank-340x286-d925.jpg.pagespeed.ce.jItxDnZhwo.jpg" title="ПриватБанк"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/pdomSdpXiKk.jpg.pagespeed.ce.MzU7MV2WAx.jpg" title="СБ Агент"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/pdomSdpXiKk.jpg.pagespeed.ce.MzU7MV2WAx.jpg" title="СБ Агент"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/cibercar.jpg.pagespeed.ce.CSwo9bfg2F.jpg" title="Cibercar"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/cibercar.jpg.pagespeed.ce.CSwo9bfg2F.jpg" title="Cibercar"/>
                                     </div>
                                 </div>
                             </div><div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="assets/images/Clients/Gerb_onpu.gif.pagespeed.ce.GvIX-s5vad.gif" title="ОНПУ"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/Gerb_onpu.gif.pagespeed.ce.GvIX-s5vad.gif" title="ОНПУ"/>
                                     </div>
                                 </div>
                             </div>
