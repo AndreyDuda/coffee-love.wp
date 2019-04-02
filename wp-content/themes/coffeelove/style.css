@@ -5,3 +5,7 @@ Author URI: credonull@gmail.com
 Description: Theme adapted for wordpress
 Version: 1.0
 */
+
+#_customize-input-phone{
+    width: 10px;
+}

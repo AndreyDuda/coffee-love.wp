@@ -11,18 +11,48 @@ add_action('customize_register', function($wp_customize) {
 /**  */
     $wp_customize->add_panel('Coffee_L', array(
         'type'=>'default',
-        'title'=> 'dasd',
+        'title'=> '',
         'capability' => 'edit_theme_options'
     ));
 
-    $wp_customize->add_setting('phone',
-        array('default' => '89215555555')
+
+    $wp_customize->add_setting('sale',
+        array('default' => '')
     );
 
-    $wp_customize->add_control('phone', array(
-            'label'   => 'Телефон',
+    $wp_customize->add_control('sale', array(
+            'label'   => 'Акция',
             'section' => 'coffee_love',
-            'type'    => 'number',
+            'type'    => 'text',
         )
     );
+
+
+
+	$wp_customize->add_setting('sale_show', array(
+		'default' => true,
+
+	));
+	$wp_customize->add_control(
+		'sale_show',
+		array(
+			'label'   => 'Акция',
+			'section' => 'coffee_love',
+			'type'    => 'checkbox',
+		)
+	);
+
+
+	$wp_customize->add_setting('preloader_show', array(
+		'default' => true,
+
+	));
+	$wp_customize->add_control(
+		'preloader_show',
+		array(
+			'label'   => 'Прелордер сайта',
+			'section' => 'coffee_love',
+			'type'    => 'checkbox',
+		)
+	);
 });

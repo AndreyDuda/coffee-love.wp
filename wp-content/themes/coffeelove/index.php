@@ -2,13 +2,13 @@
 <div class="wrapper">
 
     <!-- Preloader -->
-
-    <div id="preloader" style="display: none;">
+<?php /*if(get_theme_mod('preloader_show')): */?>
+    <div id="preloader">
         <div id="status">
             <div class="status-mes"></div>
         </div>
     </div>
-
+<?php /*endif; */?>
     <!-- Navigation start -->
 
     <nav class="navbar navbar-custom navbar-fixed-top">
@@ -74,10 +74,10 @@
                                 <div>
                                     +
                                     <span class="timer" data-to="38"></span>
-                                    (0<span class="timer" data-to="97"></span>)
-                                    <span class="timer" data-to="62"></span>
-                                    <span class="timer" data-to="124"></span>
-                                    <span class="timer" data-to="22"></span>
+                                    (0<span class="timer" data-to="67"></span>)
+                                    <span class="timer" data-to="72"></span>
+                                    <span class="timer" data-to="757"></span>
+                                    <span class="timer" data-to="17"></span>
                                 </div>
                             </div>
                         </div>
@@ -95,6 +95,7 @@
                             </div>
                         </div>
                     </div>
+                    <?php if(get_theme_mod('sale_show')): ?>
                     <div class="col-md-4">
                         <div class="row">
                             <div class="action text-center wow tada" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="1">
@@ -102,7 +103,7 @@
                                     Акция
                                 </div>
                                 <p class="action-text">
-                                    Кофемашина + 1 кг кофе = 600грн/мес!
+	                                <?php echo get_theme_mod('sale'); ?>
                                 </p>
 
                                 <div class="action-image"></div>
@@ -112,6 +113,7 @@
                             </div>
                         </div>
                     </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -738,7 +740,6 @@
                                 Заказать звонок
                             </button>
                         </div>
-
 
                     </div>
                 </div>
