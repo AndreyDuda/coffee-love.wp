@@ -2,13 +2,13 @@
 <div class="wrapper">
 
     <!-- Preloader -->
-<?php /*if(get_theme_mod('preloader_show')): */?>
+<?php if(get_theme_mod('preloader_show')): ?>
     <div id="preloader">
         <div id="status">
             <div class="status-mes"></div>
         </div>
     </div>
-<?php /*endif; */?>
+<?php endif; ?>
     <!-- Navigation start -->
 
     <nav class="navbar navbar-custom navbar-fixed-top">
@@ -104,6 +104,7 @@
                                 </div>
                                 <p class="action-text">
 	                                <?php echo get_theme_mod('sale'); ?>
+                                    <!--Кофемашина + 1 кг кофе = 600грн/мес!-->
                                 </p>
 
                                 <div class="action-image"></div>
@@ -740,6 +741,7 @@
                                 Заказать звонок
                             </button>
                         </div>
+
 
                     </div>
                 </div>
