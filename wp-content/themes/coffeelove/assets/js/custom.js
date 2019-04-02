@@ -32,6 +32,7 @@
         var Scrobler = function (id, type) {
             var getParam = function (name) {
                     var $el = $(name);
+                    console.log($el);
                     return $el
                         ? $el.html().trim()
                         : null;

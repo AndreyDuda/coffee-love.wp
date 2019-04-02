@@ -374,23 +374,23 @@
                                 ?>
                                 <div class="col-md-4">
                                     <div class="clearfix product">
-                                        <div class="col-xs-4 col-sm-4 text-center product-image" id="90-photo">
+                                        <div class="col-xs-4 col-sm-4 text-center product-image" id="<?php echo get_the_ID();?>-photo">
                                             <?php the_post_thumbnail('', array('class' => 'item-about')) ?>
                                         </div>
                                         <div class="col-sm-8 specs text-left">
                                             <div class="row">
-                                                <div class="title" id="90-title">
+                                                <div class="title" id="<?php echo get_the_ID();?>-title">
                                                     <?php echo the_title() ?>
                                                 </div>
-                                                <div id="90-price">
+                                                <div id="<?php echo get_the_ID();?>-price">
                                                     <strong>Цена</strong>:
                                                     <?php the_field('price')?> грн.
                                                 </div>
-                                                <div id="90-consist">
+                                                <div id="<?php echo get_the_ID();?>-consist">
                                                     <strong>Состав</strong>:
                                                     <?php the_field('composition')?>
                                                 </div>
-                                                <div id="90-strength">
+                                                <div id="<?php echo get_the_ID();?>-strength">
                                                     <strong>Крепость</strong>:
                                                     <?php
                                                         $count = (get_field('power'))? (int)get_field('power'):0;
@@ -402,15 +402,15 @@
                                                     ?>
                                                 </div>
 
-                                                <div class="hide" id="90-country">
+                                                <div class="hide" id="<?php echo get_the_ID();?>-country">
                                                     <strong>Страна</strong>:
                                                     <?php the_category('country')?>
                                                 </div>
-                                                <div class="hide" id="90-type">
+                                                <div class="hide" id="<?php echo get_the_ID();?>-type">
                                                     <strong>Тип</strong>:
                                                     "Кофе в зернах"
                                                 </div>
-                                                <div class="hide" id="90-description">
+                                                <div class="hide" id="<?php echo get_the_ID();?>-description">
                                                     <ul>
                                                         <li>
                                                             <p><span>Идеальное сочетание натуральной очищенной робусты, смягчённой небольшим количеством бархатистой арабики: классический итальянский вкус, который ценится за свой интенсивный аромат, крепкий вкус и </span><span lang="UK">&nbsp;&nbsp;</span><span>ароматную пенку.</span></p>
@@ -422,10 +422,10 @@
                                         <div class="clearfix"></div>
                                         <div class="col-sm-12 buttons text-center">
                                             <div class="row">
-                                                <button class="btn btn-default" data-role="about" data-id="90" data-entity="coffee">
+                                                <button class="btn btn-default" data-role="about" data-id="<?php echo get_the_ID();?>" data-entity="coffee">
                                                     Подробнее
                                                 </button>
-                                                <button class="btn btn-default" data-role="order" data-id="90" data-entity="coffee">
+                                                <button class="btn btn-default" data-role="order" data-id="<?php echo get_the_ID();?>" data-entity="coffee">
                                                     Заказать
                                                 </button>
                                             </div>
@@ -545,12 +545,6 @@
                                     </div>
                                 </div>
                                 <?php endwhile; wp_reset_postdata();?>
-
-
-
-
-
-
                             </div>
                         </div>
 
