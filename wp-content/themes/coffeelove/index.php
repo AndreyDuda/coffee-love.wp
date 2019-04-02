@@ -104,7 +104,6 @@
                                 </div>
                                 <p class="action-text">
 	                                <?php echo get_theme_mod('sale'); ?>
-                                    <!--Кофемашина + 1 кг кофе = 600грн/мес!-->
                                 </p>
 
                                 <div class="action-image"></div>
@@ -184,7 +183,7 @@
                     <div class="row">
                         <i class="fa fa-coffee" style="font-size: 60px"></i>
 
-                        <div class="timer" data-to="5425"></div>
+                        <div class="timer" data-to="<?php echo get_theme_mod('cap') ?>"></div>
                         <p>Выпитых чашек</p>
                     </div>
                 </div>
@@ -193,7 +192,7 @@
                     <div class="row">
                         <i class="fa cl-coffee-machine" style="font-size: 60px"></i>
 
-                        <div class="timer" data-to="109"></div>
+                        <div class="timer" data-to="<?php echo get_theme_mod('coffeemachine') ?>"></div>
                         <p>Установленных кофемашин</p>
                     </div>
                 </div>
@@ -202,7 +201,7 @@
                     <div class="row">
                         <i class="fa cl-smile" style="font-size: 60px"></i>
 
-                        <div class="timer" data-to="316"></div>
+                        <div class="timer" data-to="<?php echo get_theme_mod('joy') ?>"></div>
                         <p>Счастливых покупателей</p>
                     </div>
                 </div>
@@ -668,6 +667,7 @@
 
                         </div>
                     </div>
+                    <?php if(get_theme_mod('sale_show')): ?>
                     <div class="col-md-3">
                         <div class="row">
                             <div class="action text-center wow tada" data-wow-duration="2s" data-wow-delay="1s" data-wow-iteration="1">
@@ -675,7 +675,7 @@
                                     Акция
                                 </div>
                                 <p class="action-text">
-                                    Кофемашина + 1 кг кофе = 600грн/мес!
+		                            <?php echo get_theme_mod('sale'); ?>
                                 </p>
 
                                 <div class="action-image"></div>
@@ -685,6 +685,7 @@
                             </div>
                         </div>
                     </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

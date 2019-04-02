@@ -55,4 +55,40 @@ add_action('customize_register', function($wp_customize) {
 			'type'    => 'checkbox',
 		)
 	);
+
+
+	$wp_customize->add_setting('cap',
+		array('default' => '5425')
+	);
+
+	$wp_customize->add_control('cap', array(
+			'label'   => 'Выпитых чашек',
+			'section' => 'coffee_love',
+			'type'    => 'input',
+		)
+	);
+
+
+
+	$wp_customize->add_setting('coffeemachine',
+		array('default' => '109')
+	);
+
+	$wp_customize->add_control('coffeemachine', array(
+			'label'   => 'Установленных кофемашин',
+			'section' => 'coffee_love',
+			'type'    => 'input',
+		)
+	);
+
+	$wp_customize->add_setting('joy',
+		array('default' => '316')
+	);
+
+	$wp_customize->add_control('joy', array(
+			'label'   => 'Счастливых покупателей',
+			'section' => 'coffee_love',
+			'type'    => 'input',
+		)
+	);
 });
