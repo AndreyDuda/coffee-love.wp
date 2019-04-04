@@ -29,13 +29,13 @@ add_action('wp_enqueue_scripts', function (){
         wp_enqueue_script('smoothscroll_js', get_template_directory_uri() . '/assets/js/smoothscroll.js');
         wp_enqueue_script('custom_js', get_template_directory_uri() . '/assets/js/custom.js');
         wp_enqueue_script('landing_js', get_template_directory_uri() . '/assets/js/landing.js');
-
     });
 });
 
 add_action('after_setup_theme', function () { // регистрация меню
     register_nav_menu('top', 'Для шапки');
-    register_nav_menu('footer', 'Для подвала');
+    register_nav_menu('coffee', 'Для ссылки кофе');
+    register_nav_menu('coffeemachine', 'Для ссылки кофе машины');
 
     add_theme_support( 'post-thumbnails' );  // миниатюры к постам
     add_theme_support( 'title-tag' );  // авто тайтл страниц
