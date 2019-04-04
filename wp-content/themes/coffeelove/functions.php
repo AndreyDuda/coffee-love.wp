@@ -2,6 +2,7 @@
 
 include_once (__DIR__ . '/inc/functions/admin_functions.php');
 include_once (__DIR__ . '/inc/functions/customizer_functions.php');
+include_once (__DIR__ . '/inc/Menu/Custom_Walker_Nav_Menu.php');
 
 add_action('wp_enqueue_scripts', function (){
 

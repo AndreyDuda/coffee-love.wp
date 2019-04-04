@@ -478,6 +478,15 @@
 										<div class="flipper">
 											<div class="front">
 												КАТАЛОГ КОФЕМАШИН
+                                                <?php
+/*                                                wp_nav_menu([
+	                                                'theme_location' => 'coffee',
+	                                                'container'      => null, //удаляем wp теги
+	                                                'item_wrap'      => '%3$s',
+	                                                'walker' => new Custom_Walker_Nav_Menu()
+                                                ]);
+                                                */?>
+											</div>
 											</div>
 											<div class="back">
 												ВОЙТИ В КАТАЛОГ
