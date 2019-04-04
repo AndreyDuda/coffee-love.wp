@@ -1,7 +1,4 @@
 (function ($) {
-
-
-
     /* ---------------------------------------------- /*
  * Carousel bootstrap
  /* ---------------------------------------------- */
@@ -56,7 +53,7 @@ $(function () {
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
-        }, 100);
+        }, 500);
         e.preventDefault();
     });
 
