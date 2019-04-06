@@ -22,8 +22,8 @@
 
     <meta name="description" content="АРЕНДА/ПРОДАЖА/СЕРВИС профессиональных кофемашин в Одессе и Одесской области. Аренда Кофемашин Южный, Коблево, Черноморск, Затока, Сергеевка, Грибовка, Белгород. Кофе в зернах купить, кофе купить в одессе, кофе купить интернет, кофе оптом, купить кофе в зернах, купить кофе оптом, бесплатная аренда кофемашины при покупке кофе, кофемашина для кафе, кофемашина для офиса"/>
     <meta name="Keywords" content="кофемашина бесплатно, аренда кофе, аренда кофейного аппарата, аренда кофемашины, love coffee, бесплатная аренда кофемашины, аренда кофемашины бесплатно, кофе машина"/>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo get_template_directory() ?>/assets/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo get_template_directory() ?>/assets/image/favicon.ico" type="image/x-icon">
 
     <title>Coffee Love | АРЕНДА КОФЕМАШИН В ОДЕССЕ</title>
 

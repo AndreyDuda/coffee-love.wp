@@ -4,6 +4,13 @@ include_once (__DIR__ . '/inc/functions/admin_functions.php');
 include_once (__DIR__ . '/inc/functions/customizer_functions.php');
 include_once (__DIR__ . '/inc/Menu/Custom_Walker_Nav_Menu.php');
 
+function get_navigation() {
+	$templates = array();
+	$templates[] = 'navigation.php';
+
+	locate_template($templates, true);
+}
+
 add_action('wp_enqueue_scripts', function (){
 
     wp_enqueue_style('fonts_googleapis', '//fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin-ext,latin,cyrillic');

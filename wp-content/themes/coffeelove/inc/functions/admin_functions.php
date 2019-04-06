@@ -124,7 +124,7 @@ function remove_menus(){
 	remove_menu_page( 'edit-comments.php' );          //Комментарии
 	remove_menu_page( 'users.php' );                  //Пользователи
 	remove_menu_page( 'tools.php' );                  //Инструменты
-	remove_menu_page( 'options-general.php' );        //Настройки
+//	remove_menu_page( 'options-general.php' );        //Настройки
 }
 add_action( 'admin_menu', 'remove_menus' );
 
