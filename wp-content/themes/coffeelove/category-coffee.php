@@ -5,9 +5,8 @@
 
     <section class="body-section products-catalog">
         <div class="container">
-            <div class="row"><h1>skfsefh</h1>
+            <div class="row">
 	            <?php while (have_posts()): the_post() ?>
-                <h1>skfsefh</h1>
                     <div class="col-md-3 catalog-item">
                         <div class="row">
                             <a href="<?php the_permalink() ?>" title="<?php the_title();?>">

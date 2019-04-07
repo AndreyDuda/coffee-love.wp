@@ -495,7 +495,7 @@
                                 ?>
                                 <div class="col-md-4 coffee-machine">
                                     <div class="row">
-                                        <div class="coffee-machine-title font-22"><?php the_title(); echo $finish?></div>
+                                        <div class="coffee-machine-title font-22"><?php the_title(); ?></div>
                                         <div class="coffee-machine-pic">
 			                                <span id="<?php echo get_the_ID();?>-photo">
 				                                <?php the_post_thumbnail('', array('class' => 'item-about')) ?>

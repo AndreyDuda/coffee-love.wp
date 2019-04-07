@@ -54,7 +54,7 @@ function prefix_pre_get_posts($query) {
 	if ($query->is_category) {
 		$query->set('post_type', array(
 			'coffee',
-			'coffeemachine'
+			'coffee_machine'
 		));
 	}
 	return $query;
