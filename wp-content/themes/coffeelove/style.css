@@ -10,6 +10,8 @@ Version: 1.0
     width: 10px;
 }
 
-div.product-description a{
-    color: black;
+
+
+.navbar-color a{
+    color: black!important;
 }
