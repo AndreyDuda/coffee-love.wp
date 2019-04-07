@@ -17,14 +17,15 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#intro">Главная</a></li>
-				<li><a href="#how-it-works">Как мы работаем</a></li>
-				<li><a href="#stats">Статистика</a></li>
-				<li><a href="#about_us">О нас</a></li>
-				<li><a href="#coffee">Кофе</a></li>
-				<li><a href="#coffee-machines">АРЕНДА КОФЕМАШИН</a></li>
-				<li><a href="#clients">Клиенты</a></li>
-				<li><a href="#footer">Контакты</a></li>
+                <?php $link = (!is_home())? home_url() . '/':''; ?>
+				<li><a href="<?php echo $link;?>#intro">Главная </a></li>
+				<li><a href="<?php echo $link;?>#how-it-works">Как мы работаем</a></li>
+				<li><a href="<?php echo $link;?>#stats">Статистика</a></li>
+				<li><a href="<?php echo $link;?>#about_us">О нас</a></li>
+				<li><a href="<?php echo $link;?>#coffee">Кофе</a></li>
+				<li><a href="<?php echo $link;?>#coffee-machines">АРЕНДА КОФЕМАШИН</a></li>
+				<li><a href="<?php echo $link;?>#clients">Клиенты</a></li>
+				<li><a href="<?php echo $link;?>#footer">Контакты</a></li>
 			</ul>
 		</div>
 	</div>
