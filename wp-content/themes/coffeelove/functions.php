@@ -48,3 +48,15 @@ add_action('after_setup_theme', function () { // регистрация меню
     add_theme_support( 'post-thumbnails' );  // миниатюры к постам
     add_theme_support( 'title-tag' );  // авто тайтл страниц
 });
+
+function prefix_pre_get_posts($query) {
+	if ($query->is_category) {
+		$query->set('post_type', array(
+			'coffee',
+			'coffeemachine'
+		));
+	}
+	return $query;
+}
+
+add_action('pre_get_posts', 'prefix_pre_get_posts');

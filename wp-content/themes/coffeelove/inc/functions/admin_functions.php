@@ -10,9 +10,7 @@ add_action('admin_menu', function (){
         get_template_directory_uri() . '/assets/image/favicon.ico' ,
         3);
 
-   /* add_submenu_page( 'coffee-love', 'Кофе', 'Мое основное меню', 'manage_options', 'coffee-love/coffee', function() {
-        echo 'Один';
-    });*/
+
 });
 add_filter( 'option_page_capability_'.'my_page_slug', 'my_page_capability' );
 
@@ -43,6 +41,7 @@ add_action('init', function() {
             'hierarchical'        => false,
             'supports'            => array('title', 'editor', 'thumbnail'),
             'show_in_nav_menus'   => true,
+            'taxonomies'          => array( 'category' )
     ]);
 
     register_post_type('coffee_machine', [
@@ -67,6 +66,7 @@ add_action('init', function() {
         'hierarchical'        => false,
         'supports'            => array('title', 'editor', 'thumbnail'),
         'show_in_nav_menus'   => true,
+        'taxonomies'          => array( 'category' )
     ]);
 
     register_taxonomy('coffee-type', array('coffee'), array(
@@ -118,13 +118,23 @@ add_action('init', function() {
 
 
 function remove_menus(){
-	remove_menu_page( 'index.php/dashboard' );                  //Консоль
-	remove_menu_page( 'edit.php' );                   //Записи
+	//remove_menu_page( 'index.php/dashboard' );                  //Консоль
+	remove_menu_page( 'edit.php' );
+
 	remove_menu_page( 'edit.php?post_type=page' );    //Страницы
+	remove_menu_page( 'nav-menus.php' );    //Страницы
+
 	remove_menu_page( 'edit-comments.php' );          //Комментарии
 	remove_menu_page( 'users.php' );                  //Пользователи
-	remove_menu_page( 'tools.php' );                  //Инструменты
+	//remove_menu_page( 'tools.php' );                  //Инструменты
 //	remove_menu_page( 'options-general.php' );        //Настройки
+
+	add_submenu_page('coffee-love',
+		'Меню',
+		'Меню',
+		'manage_options',
+		'nav-menus.php',
+		'' );
 }
 add_action( 'admin_menu', 'remove_menus' );
 
