@@ -385,14 +385,10 @@
                                                 </div>
                                                 <div class="hide" id="<?php echo get_the_ID();?>-type">
                                                     <strong>Тип</strong>:
-                                                    "Кофе в зернах"
+                                                    "<?php the_category('coffee-type')?>"
                                                 </div>
                                                 <div class="hide" id="<?php echo get_the_ID();?>-description">
-                                                    <ul>
-                                                        <li>
-                                                            <p><span>Идеальное сочетание натуральной очищенной робусты, смягчённой небольшим количеством бархатистой арабики: классический итальянский вкус, который ценится за свой интенсивный аромат, крепкий вкус и </span><span lang="UK">&nbsp;&nbsp;</span><span>ароматную пенку.</span></p>
-                                                        </li>
-                                                    </ul>
+                                                   <?php the_content(); ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -457,7 +453,15 @@
 												КАТАЛОГ КОФЕМАШИН
 											</div>
 											<div class="back">
-												ВОЙТИ В КАТАЛОГ
+												<?php
+												wp_nav_menu([
+													'theme_location' => 'coffeemachine',
+													'container'      => null, //удаляем wp теги
+													'item_wrap'      => '%3$s',
+													'walker' => new Custom_Walker_Nav_Menu()
+												]);
+
+												?>
 											</div>
 										</div>
 									</div>
@@ -668,64 +672,6 @@
         </div>
     </section>
 
-    <!-- Footer start -->
-    <footer id="footer" class="body-section">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-8 promo">
-                    <div class="row">
-                        <h2>
-                            Контакты
-                        </h2>
-                        <div class="title">
-                            АРЕНДА КОФЕМАШИН В ОДЕССЕ<br/>
-
-                        </div>
-
-                        <div class="sub-title">
-                            Более 50 сортов кофе, 20 моделей кофемашин
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 contacts">
-                    <div class="row">
-                        <p class="socials">
-                            <a href="https://vk.com/coffeeloveyou" title="Наша группа Вконтакте">
-                                <i class="fa fa-vk"></i>
-                            </a>
-                            <a href="https://www.facebook.com/groups/coffeeloveyou/" title="Наша группа в Facebook">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </p>
-                        <p>
-                            +38 (063) 85 230 85
-                        </p>
-                        <p>
-                            +38 (067) 29 757 17
-                        </p>
-                        <p>
-                            +38 (093) 069 65 09
-                        </p>
-                        <p class="coffee-mail">
-                            sales@coffee-love.com.ua
-                        </p>
-
-                        <div class="callback">
-                            <button class="btn btn-default btn-lg wobble-vertical" data-toggle="modal" data-target="#callback-modal">
-                                Заказать звонок
-                            </button>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
 
 <?php get_footer(); ?>

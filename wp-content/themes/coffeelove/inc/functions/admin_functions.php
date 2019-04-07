@@ -110,8 +110,30 @@ add_action('init', function() {
         'query'                 => array(
             ''
         )
-
     ));
+
+	register_taxonomy('country', array('coffee'), array(
+		'labels'                => array(
+			'name'              => 'Страна',
+			'singular_name'     => 'Страна',
+			'search_items'      => 'Найти страна',
+			'all_items'         => 'Все страныЫ',
+			'view_item '        => 'Посмотреть страна',
+			'edit_item'         => 'Редактировать страна',
+			'update_item'       => 'Обновить страна',
+			'add_new_item'      => 'Добавить новый страна',
+			'new_item_name'     => 'Добавить новый',
+			'menu_name'         => 'Типы кофе',
+		),
+		'description'           => '', // описание таксономии
+		'public'                => true,
+		'show_in_menu'          => 'coffee-love',
+		'hierarchical'          => false,
+		'rewrite'               => false,
+		'query'                 => array(
+			''
+		)
+	));
 
 
 });
@@ -119,10 +141,10 @@ add_action('init', function() {
 
 function remove_menus(){
 	//remove_menu_page( 'index.php/dashboard' );                  //Консоль
-	remove_menu_page( 'edit.php' );
+	//remove_menu_page( 'edit.php' );
 
 	remove_menu_page( 'edit.php?post_type=page' );    //Страницы
-	remove_menu_page( 'nav-menus.php' );    //Страницы
+	remove_menu_page( 'nav-menus.php' );
 
 	remove_menu_page( 'edit-comments.php' );          //Комментарии
 	remove_menu_page( 'users.php' );                  //Пользователи

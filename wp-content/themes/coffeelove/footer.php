@@ -1,3 +1,60 @@
+<footer id="footer" class="body-section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 promo">
+                <div class="row">
+                    <h2>
+                        Контакты
+                    </h2>
+                    <div class="title">
+                        АРЕНДА КОФЕМАШИН В ОДЕССЕ<br/>
+
+                    </div>
+
+                    <div class="sub-title">
+                        Более 50 сортов кофе, 20 моделей кофемашин
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-4 contacts">
+                <div class="row">
+                    <p class="socials">
+                        <a href="https://vk.com/coffeeloveyou" title="Наша группа Вконтакте">
+                            <i class="fa fa-vk"></i>
+                        </a>
+                        <a href="https://www.facebook.com/groups/coffeeloveyou/" title="Наша группа в Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </p>
+                    <p>
+                        +38 (063) 85 230 85
+                    </p>
+                    <p>
+                        +38 (067) 29 757 17
+                    </p>
+                    <p>
+                        +38 (093) 069 65 09
+                    </p>
+                    <p class="coffee-mail">
+                        sales@coffee-love.com.ua
+                    </p>
+
+                    <div class="callback">
+                        <button class="btn btn-default btn-lg wobble-vertical" data-toggle="modal" data-target="#callback-modal">
+                            Заказать звонок
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 <div id="counters">
 
     <div class="analitika">

@@ -9,3 +9,7 @@ Version: 1.0
 #_customize-input-phone{
     width: 10px;
 }
+
+div.product-description a{
+    color: black;
+}
