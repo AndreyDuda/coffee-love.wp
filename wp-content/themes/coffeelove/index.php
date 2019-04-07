@@ -32,21 +32,23 @@
                         <div class="clearfix header-margin-block"></div>
                         <div id="phone-numbers" class="contacts">
                             <div class="row">
-                                <div>
+                                <div><a style="color:white; text-decoration: none;" href="tel:0638523085">
                                     +
                                     <span class="timer" data-to="38"></span>
                                     (0<span class="timer" data-to="63"></span>)
                                     <span class="timer" data-to="85"></span>
                                     <span class="timer" data-to="230"></span>
                                     <span class="timer" data-to="85"></span>
+                                    </a>
                                 </div>
-                                <div>
+                                <div><a style="color:white; text-decoration: none;" href="tel:0677275717">
                                     +
                                     <span class="timer" data-to="38"></span>
                                     (0<span class="timer" data-to="67"></span>)
                                     <span class="timer" data-to="72"></span>
                                     <span class="timer" data-to="757"></span>
                                     <span class="timer" data-to="17"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

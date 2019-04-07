@@ -7,6 +7,7 @@
                     <h2>
                         Контакты
                     </h2>
+
                     <div class="title">
                         АРЕНДА КОФЕМАШИН В ОДЕССЕ<br/>
 
@@ -15,7 +16,7 @@
                     <div class="sub-title">
                         Более 50 сортов кофе, 20 моделей кофемашин
                     </div>
-
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.7395397584464!2d30.746017115591673!3d46.47366687912588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63177af4ba3bd%3A0x6e0bee6adb14268c!2z0YPQuy4g0JHQsNC30LDRgNC90LDRjywgMjgsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1554668449624!5m2!1sru!2sua" width="600px" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                 </div>
             </div>
@@ -31,16 +32,16 @@
                         </a>
                     </p>
                     <p>
-                        +38 (063) 85 230 85
+                        <a style="color:black; text-decoration: none;" href="tel:0638523085">+38 (063) 85 230 85</a>
                     </p>
                     <p>
-                        +38 (067) 29 757 17
+                        <a style="color:black; text-decoration: none;" href="tel:0672975717">+38 (067) 29 757 17</a>
                     </p>
                     <p>
-                        +38 (093) 069 65 09
+                        <a style="color:black; text-decoration: none;" href="tel:0930696509">+38 (093) 069 65 09</a>
                     </p>
                     <p class="coffee-mail">
-                        sales@coffee-love.com.ua
+                        <a style="color: black; text-decoration: none; " href="mailto:sales@coffee-love.com.ua">sales@coffee-love.com.ua</a>
                     </p>
 
                     <div class="callback">
@@ -189,38 +190,6 @@
         </div>
     </div>
 </div>
-
-<div class="hide">
-    <!-- Yandex.Metrika informer -->
-    <!--<a href="https://metrika.yandex.ru/stat/?id=27921684&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/27921684/3_0_9FFFF4FF_7FFFD4FF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:27921684,lang:'ru'});return false}catch(e){}"/></a>-->
-    <!-- /Yandex.Metrika informer -->
-</div>
-<!-- Yandex.Metrika counter -->
-<!--<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter27921684 = new Ya.Metrika({id:27921684});
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/27921684" style="position:absolute; left:-9999px;" alt=""/></div></noscript>-->
-<!-- /Yandex.Metrika counter -->
-
-
-
 
 </body>
 <?php wp_footer();?>
