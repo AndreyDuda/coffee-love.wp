@@ -91,4 +91,41 @@ add_action('customize_register', function($wp_customize) {
 			'type'    => 'input',
 		)
 	);
+
+	$wp_customize->add_setting('map-width',
+		array('default' => '50')
+	);
+	$wp_customize->add_control('map-width', array(
+			'label'   => 'Ширина карты в %',
+			'section' => 'coffee_love',
+			'type'    => 'number',
+		)
+	);
+
+	$wp_customize->add_setting('map-height',
+		array('default' => '300')
+	);
+
+	$wp_customize->add_control('map-height', array(
+			'label'   => 'Высота в карты в px',
+			'section' => 'coffee_love',
+			'type'    => 'number',
+		)
+	);
+
+	$wp_customize->add_setting('map_show', array(
+		'default' => true,
+
+	));
+	$wp_customize->add_control(
+		'map_show',
+		array(
+			'label'   => 'Показать карту',
+			'section' => 'coffee_love',
+			'type'    => 'checkbox',
+		)
+	);
+
+
+
 });

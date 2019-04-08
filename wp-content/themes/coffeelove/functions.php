@@ -42,7 +42,7 @@ add_action('wp_enqueue_scripts', function (){
 });
 
 add_action('after_setup_theme', function () { // регистрация меню
-    register_nav_menu('top_menu', 'Для шапки');
+	add_theme_support( 'title-tag' );
     register_nav_menu('coffee', 'Для ссылки кофе');
     register_nav_menu('coffeemachine', 'Для ссылки кофе машины');
 

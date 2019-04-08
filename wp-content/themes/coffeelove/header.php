@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<?php language_attributes(); ?>
 <head>
-    <meta name="keywords" content="Lavazza Crema Aroma"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="keywords" content="<?php bloginfo( 'name' ); ?> ?>"/>
+    <meta http-equiv="Content-Type" content="text/html; <?php bloginfo('charset'); ?>8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--   10      -->
     <script type="application/ld+json">
@@ -25,9 +25,7 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/image/favicon.ico" type="image/x-icon">
     <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/image/favicon.ico" type="image/x-icon">
 
-    <title>Coffee Love | АРЕНДА КОФЕМАШИН В ОДЕССЕ</title>
-
-   <!-- <base href="http://coffee-love.com.ua/">-->
+    <base href="<?php echo home_url()?>">
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

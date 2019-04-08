@@ -4,20 +4,21 @@
         <div class="row">
             <div class="col-md-8 promo">
                 <div class="row">
-                    <h2>
+                    <h2 style="padding: 0; margin: 0;">
                         Контакты
                     </h2>
 
-                    <div class="title">
+                    <div class="title" style="padding: 0; margin: 0;">
                         АРЕНДА КОФЕМАШИН В ОДЕССЕ<br/>
 
                     </div>
 
-                    <div class="sub-title">
+                    <div class="sub-title" style="padding: 0; margin: 0;">
                         Более 50 сортов кофе, 20 моделей кофемашин
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.7395397584464!2d30.746017115591673!3d46.47366687912588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63177af4ba3bd%3A0x6e0bee6adb14268c!2z0YPQuy4g0JHQsNC30LDRgNC90LDRjywgMjgsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1554668449624!5m2!1sru!2sua" width="600px" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+                    <?php if (get_theme_mod( 'map_show' )) : ?>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.7395397584464!2d30.746017115591673!3d46.47366687912588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63177af4ba3bd%3A0x6e0bee6adb14268c!2z0YPQuy4g0JHQsNC30LDRgNC90LDRjywgMjgsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1554668449624!5m2!1sru!2sua" width="<?php echo get_theme_mod('map-width') ?>%;" height="<?php echo get_theme_mod('map-height') ?>px;" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <?php endif; ?>
                 </div>
             </div>
 
