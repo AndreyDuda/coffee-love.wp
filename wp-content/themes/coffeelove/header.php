@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php language_attributes(); ?>
+
 <head>
     <meta name="keywords" content="<?php bloginfo( 'name' ); ?> ?>"/>
     <meta http-equiv="Content-Type" content="text/html; <?php bloginfo('charset'); ?>8"/>
