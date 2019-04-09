@@ -1,4 +1,9 @@
 <?php get_header() ?>
+    <style>
+        .navbar a{
+            color: white;
+        }
+    </style>
 <div class="wrapper">
 
     <!-- Preloader -->

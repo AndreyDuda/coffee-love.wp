@@ -23,7 +23,7 @@
             </div>
 
             <div class="col-md-4 contacts">
-                <div class="row">
+                <div class="row" style="background: #ececec;">
                     <p class="socials">
                         <a href="https://vk.com/coffeeloveyou" title="Наша группа Вконтакте">
                             <i class="fa fa-vk"></i>

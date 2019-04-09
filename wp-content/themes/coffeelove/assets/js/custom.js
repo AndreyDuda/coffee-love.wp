@@ -149,10 +149,12 @@
             if ($(this).scrollTop() >= navHeight) {
                 navBarLogo.show();
                 navbar.addClass('navbar-color');
+                navbar.removeClass('white-color');
             } else {
                 if (document.location.pathname === "/") {
                     navBarLogo.hide();
                     navbar.removeClass('navbar-color');
+                    navbar.addClass('white-color');
                 }
             }
         });

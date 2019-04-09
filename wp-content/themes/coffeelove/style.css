@@ -10,8 +10,6 @@ Version: 1.0
     width: 10px;
 }
 
-
-
-.navbar-color a{
-    color: black!important;
+.white-color a{
+    color:white!important;
 }
