@@ -40,7 +40,7 @@
             .on('update input change', 'input[name=client-name]', function (e) {
                 validation.name = true;
                 var val = e.target.value;
-                val = val.replace(/[^a-zA-ZР°-СЏРђ-РЇ\s]+/ig, '');
+                val = val.replace(/[^a-z,A-Z,а-я,А-Я\s]+/ig, '');
                 e.target.value = val.length > 50
                     ? val.substr(0, 50)
                     : val;

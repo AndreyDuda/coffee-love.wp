@@ -70,7 +70,7 @@ add_action('init', function() {
         'taxonomies'          => array( 'category' )
     ]);
 
-	register_post_type('order', [
+	register_post_type('order_coffee_love', [
 		'labels' => [
 			'name'               => 'Заказы', // основное название для типа записи
 			'singular_name'      => 'Заказы', // название для одной записи этого типа
@@ -164,7 +164,7 @@ add_action('init', function() {
 
 
 function remove_menus(){
-	//remove_menu_page( 'index.php/dashboard' );                  //Консоль
+	remove_menu_page( 'index.php/dashboard' );                  //Консоль
 	remove_menu_page( 'edit.php' );
 
 	remove_menu_page( 'edit.php?post_type=page' );    //Страницы
@@ -172,7 +172,7 @@ function remove_menus(){
 
 	remove_menu_page( 'edit-comments.php' );          //Комментарии
 	remove_menu_page( 'users.php' );                  //Пользователи
-	//remove_menu_page( 'tools.php' );                  //Инструменты
+	remove_menu_page( 'tools.php' );                  //Инструменты
  	remove_menu_page( 'options-general.php' );        //Настройки
 
 }
