@@ -13,7 +13,15 @@
     <section class="body-section products-catalog">
         <div class="container">
             <div class="row">
-	            <?php while (have_posts()): the_post() ?>
+	            <?php
+	            $coffee = new WP_Query(array(
+		            'post_type' => 'coffee',
+
+		            'order_by' => 'queue',
+		            'order'    => 'ASC'
+	            ));
+	            ?>
+	            <?php while ($coffee->have_posts()): $coffee->the_post() ?>
                     <div class="col-md-3 catalog-item">
                         <div class="row">
                             <a href="<?php the_permalink() ?>" title="<?php the_title();?>">

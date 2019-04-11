@@ -13,3 +13,8 @@ Version: 1.0
 .white-color a{
     color:white!important;
 }
+
+div.product-description div a{
+    color: black;
+    text-decoration: none;
+}

@@ -30,7 +30,7 @@
                             <div data-type="about:price"><strong>Цена</strong>: <?php the_field('price') ?> грн</div>
                             <div data-type="about:type">
                                 <strong>Тип</strong>:
-                                "<?php the_terms('', 'coffee-type') ?>"
+                                "<?php the_terms('', 'coffee-type', null, null, null) ?>"
                             </div>
                             <div data-type="about:consist" class="col-md-12">
                                 <div class="row">
