@@ -164,16 +164,16 @@ add_action('init', function() {
 
 
 function remove_menus(){
-	remove_menu_page( 'index.php/dashboard' );                  //Консоль
-	remove_menu_page( 'edit.php' );
+	//remove_menu_page( 'index.php/dashboard' );                  //Консоль
+	//remove_menu_page( 'edit.php' );
 
-	remove_menu_page( 'edit.php?post_type=page' );    //Страницы
-	remove_menu_page( 'nav-menus.php' );
+	//remove_menu_page( 'edit.php?post_type=page' );    //Страницы
+	//remove_menu_page( 'nav-menus.php' );
 
-	remove_menu_page( 'edit-comments.php' );          //Комментарии
-	remove_menu_page( 'users.php' );                  //Пользователи
-	remove_menu_page( 'tools.php' );                  //Инструменты
- 	remove_menu_page( 'options-general.php' );        //Настройки
+	//remove_menu_page( 'edit-comments.php' );          //Комментарии
+	//remove_menu_page( 'users.php' );                  //Пользователи
+	//remove_menu_page( 'tools.php' );                  //Инструменты
+ 	//remove_menu_page( 'options-general.php' );         //Настройки
 
 }
 add_action( 'admin_menu', 'remove_menus' );

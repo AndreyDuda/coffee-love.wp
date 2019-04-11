@@ -89,7 +89,7 @@
                 }
 
                 $.ajax({
-                    url: 'ajax.php',
+                    url: '/admin/admin-ajax.php',
                     data: data,
                     type: 'post',
                     dataType: 'json',
