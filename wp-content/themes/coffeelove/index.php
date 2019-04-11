@@ -308,7 +308,7 @@
                                 <h2 class="light-font">
                                     Кофе
                                     <span class="pull-right">
-								<a href="/coffee">
+								<a href="category/coffee">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">
@@ -453,7 +453,7 @@
                                 <h2 class="light-font">
                                     Аренда Кофемашин
                                     <span class="pull-right">
-								<a href="/coffeemachines">
+								<a href="category/coffeemachines">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">

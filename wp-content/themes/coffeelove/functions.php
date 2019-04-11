@@ -78,23 +78,44 @@ function ajax_send_mail() {
 	$to = "coffee-love@coffee-love.com.ua";
 	$subject = "New Order";
 
-	$message = "<b>This is HTML message.</b>";
-	$message .= "<h1>This is headline.</h1>";
+	$name = isset($_POST['name'])? $_POST['name']:'';
+	$phone = isset($_POST['phone'])? $_POST['phone']:'';
+	$order_id = isset($_POST['order_id'])? $_POST['order_id']:'';
+	$order_type = isset($_POST['order_type'])? $_POST['order_type']:'';
+	$order_title = isset($_POST['order_title'])? $_POST['order_title']:'';
+
+	$message = '<table>
+					<tbody>
+						<tr>
+							<td><b>Имя</b>:</td><td>'. $name .'</td>
+						</tr>
+						<tr>
+							<td><b>Телефон</b>:</td><td>'. $phone .'</td>
+						</tr>
+						<tr>
+							<td><b>Тип</b>:</td><td>'. $order_type .'</td>
+						</tr>
+						<tr>
+							<td><b>id продукта</b>:</td><td>'. $order_id .'</td>
+						</tr>
+						<tr>
+							<td><b>Название продукта</b>:</td><td>'. $order_title .'</td>
+						</tr>
+					</tbody>
+				</table>';
 
 	$header = "From:coffee-love@coffee-love.com.ua \r\n";
 	/*$header .= "Cc:coffee-love@coffee-love.com.ua \r\n";*/
 	$header .= "MIME-Version: 1.0\r\n";
-	$header .= "Content-type: text/html\r\n";
+	$header .= "Content-type: text/html; charset='utf-8';\r\n";
 
-/*	$retval = mail ($to,$subject,$message,$header);
+	$retval = mail ($to,$subject,$message,$header);
 
 	if( $retval == true ) {
 		echo "Message sent successfully...";
 	}else {
 		echo "Message could not be sent...";
-	}*/
-
-	var_dump($_POST['name']);
+	}
 
 wp_die();
 }

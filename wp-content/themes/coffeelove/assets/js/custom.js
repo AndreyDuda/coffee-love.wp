@@ -79,15 +79,15 @@
                     phone: $phone.val(),
                     order_id: null,
                     order_type: null,
-                    order_title: null
+                    order_title: null,
+                    title: null
                 };
 
                 if ($order.val()) {
                     var params = $order.val().split('|');
-
                     data.order_id = params[0];
                     data.order_type = params[1];
-                    data.order_title = $('#' + params[0] + '-title').html() || $('.title', $('.single-product-block')).html().trim();
+                    data.order_title = $('#' + params[0] + '-title').html().trim() || $('.title', $('.single-product-block')).html().trim();
                 }
 
                 $.ajax({
