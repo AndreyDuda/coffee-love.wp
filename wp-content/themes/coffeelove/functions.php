@@ -10,6 +10,13 @@ function get_navigation() {
 
 	locate_template($templates, true);
 }
+add_action('wp_head', function () {
+	$vars = array(
+		'ajax_url' => admin_url('admin-ajax.php')
+	);
+
+	echo "<script>window.wp = " . json_encode($vars) . "</script>";
+});
 
 add_action('wp_enqueue_scripts', function (){
 
@@ -61,3 +68,33 @@ function prefix_pre_get_posts($query) {
 }
 
 add_action('pre_get_posts', 'prefix_pre_get_posts');
+
+
+add_action('wp_ajax_sendmail', 'ajax_send_mail');
+add_action('wp_ajax_nopriv_sendmail', 'ajax_send_mail');
+
+function ajax_send_mail() {
+
+	$to = "coffee-love@coffee-love.com.ua";
+	$subject = "New Order";
+
+	$message = "<b>This is HTML message.</b>";
+	$message .= "<h1>This is headline.</h1>";
+
+	$header = "From:coffee-love@coffee-love.com.ua \r\n";
+	/*$header .= "Cc:coffee-love@coffee-love.com.ua \r\n";*/
+	$header .= "MIME-Version: 1.0\r\n";
+	$header .= "Content-type: text/html\r\n";
+
+/*	$retval = mail ($to,$subject,$message,$header);
+
+	if( $retval == true ) {
+		echo "Message sent successfully...";
+	}else {
+		echo "Message could not be sent...";
+	}*/
+
+	var_dump($_POST['name']);
+
+wp_die();
+}

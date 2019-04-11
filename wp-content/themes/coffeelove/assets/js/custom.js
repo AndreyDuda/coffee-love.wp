@@ -74,6 +74,7 @@
                 }
 
                 var data = {
+                    action: 'sendmail',
                     name: $name.val(),
                     phone: $phone.val(),
                     order_id: null,
@@ -83,16 +84,16 @@
 
                 if ($order.val()) {
                     var params = $order.val().split('|');
+
                     data.order_id = params[0];
                     data.order_type = params[1];
                     data.order_title = $('#' + params[0] + '-title').html() || $('.title', $('.single-product-block')).html().trim();
                 }
 
                 $.ajax({
-                    url: '/admin/admin-ajax.php',
+                    url: window.wp.ajax_url,
                     data: data,
                     type: 'post',
-                    dataType: 'json',
                     success: function (response) {
                         if (response.error) {
                             alert('Ошибка сервера, попробуйте еще раз.');
