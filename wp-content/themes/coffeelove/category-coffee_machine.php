@@ -25,9 +25,9 @@
 							<span class="text-center">
 					<div class="coffee-machine-price text-center">
 						<button class="btn btn-default" data-role="about" data-id="<?php get_the_ID(); ?>" data-entity="<?php $category[0]->slug; ?>">
-							<b>Купить</b>
+							<b>Аренда без привязки</b>
 							<div class="price" id="<?php get_the_ID(); ?>-price">
-								<?php the_field('price_m') ?> грн
+								от. <?php the_field('rentfree') ?> кг.
 							</div>
 						</button>
 						<button class="btn btn-default" data-role="order" data-id="<?php get_the_ID(); ?>" data-entity="<?php $category[0]->slug; ?>">

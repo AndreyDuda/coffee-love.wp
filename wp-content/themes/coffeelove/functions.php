@@ -75,7 +75,7 @@ add_action('wp_ajax_nopriv_sendmail', 'ajax_send_mail');
 
 function ajax_send_mail() {
 
-	$to = "coffee-love@coffee-love.com.ua";
+	$to = "sales@coffee-love.com.ua";
 	$subject = "New Order";
 
 	$name = isset($_POST['name'])? $_POST['name']:'';
@@ -104,7 +104,7 @@ function ajax_send_mail() {
 					</tbody>
 				</table>';
 
-	$header = "From:coffee-love@coffee-love.com.ua \r\n";
+	$header = "From:sales@coffee-love.com.ua \r\n";
 	/*$header .= "Cc:coffee-love@coffee-love.com.ua \r\n";*/
 	$header .= "MIME-Version: 1.0\r\n";
 	$header .= "Content-type: text/html; charset='utf-8';\r\n";

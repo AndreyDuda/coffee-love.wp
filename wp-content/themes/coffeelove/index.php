@@ -518,13 +518,13 @@
                                         </div>
                                         <div class="coffee-machine-price text-center">
                                             <button class="btn btn-default" data-role="about" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
-                                                <b>Купить</b>
+                                                <b>Аренда без привязки</b>
                                                 <div class="price" id="<?php echo get_the_ID();?>-price">
-                                                    <?php the_field('price_m')?> грн.
+                                                   от <?php the_field('rentfree')?> кг.
                                                 </div>
                                             </button>
                                             <button class="btn btn-default" data-role="order" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
-                                                <b>Арендовать</b>
+                                                <b>Аренда</b>
                                                 <div class="price" id="<?php echo get_the_ID();?>-price">
                                                     <?php the_field('rent')?> кг.
                                                 </div>
