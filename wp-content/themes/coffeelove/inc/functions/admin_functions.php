@@ -88,9 +88,8 @@ add_action('init', function() {
 		'hierarchical'        => false,
 		'supports'            => array('title', 'editor'),
 		'show_in_nav_menus'   => true,
-		'rewrite'             => false,
-		'capabilities' => array(
-			'create_posts' => false)
+
+
 	]);
 
     register_taxonomy('coffee-type', array('coffee'), array(
@@ -165,12 +164,12 @@ add_action('init', function() {
 
 function remove_menus(){
 	//remove_menu_page( 'index.php/dashboard' );                  //Консоль
-	//remove_menu_page( 'edit.php' );
+	remove_menu_page( 'edit.php' );
 
-	//remove_menu_page( 'edit.php?post_type=page' );    //Страницы
+	remove_menu_page( 'edit.php?post_type=page' );    //Страницы
 	//remove_menu_page( 'nav-menus.php' );
 
-	//remove_menu_page( 'edit-comments.php' );          //Комментарии
+	remove_menu_page( 'edit-comments.php' );          //Комментарии
 	//remove_menu_page( 'users.php' );                  //Пользователи
 	//remove_menu_page( 'tools.php' );                  //Инструменты
  	//remove_menu_page( 'options-general.php' );         //Настройки

@@ -109,7 +109,27 @@ function ajax_send_mail() {
 	$header .= "MIME-Version: 1.0\r\n";
 	$header .= "Content-type: text/html; charset='utf-8';\r\n";
 
-	$retval = mail ($to,$subject,$message,$header);
+	$defaults = array(
+		'post_status'           => 'publish', // черновик
+		'post_type'             => 'order_coffee_love', // тип - запись блога (пост)
+		'post_author'           => '1', // ID автора
+		'ping_status'           => get_option('default_ping_status'),
+		'post_parent'           => 0, // родитель
+		'menu_order'            => 0, // порядок в меню
+		'to_ping'               =>  '',
+		'pinged'                => '',
+		'post_password'         => '', // без пароля
+		'guid'                  => '',
+		'post_content_filtered' => '',
+		'post_excerpt'          => '', // анонс
+		'import_id'             => 0,
+		'post_title'            => $name . ' | ' . $phone . ' | ' . $order_type . ' | ' . $order_title,
+		'post_content'          => $message
+	);
+
+	wp_insert_post( $defaults);
+
+	$retval = mail($to,$subject,$message,$header);
 
 	if( $retval == true ) {
 		echo "Message sent successfully...";
