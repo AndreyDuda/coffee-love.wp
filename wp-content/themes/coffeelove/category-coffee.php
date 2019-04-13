@@ -1,13 +1,6 @@
 <?php get_header(); ?>
-    <style>
-        .navbar{
-            background: white!important;
-            box-shadow: 0 0 4px rgba(0, 0, 0, .2)!important;
-            color: black!important;
-        }
-    </style>
+
 <div class="wrapper">
-    <!-- Navigation start -->
 	<?php get_navigation();?>
 
     <section class="body-section products-catalog">
