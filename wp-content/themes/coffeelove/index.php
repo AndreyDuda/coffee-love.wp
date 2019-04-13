@@ -50,7 +50,7 @@
                                     +
                                     <span class="timer" data-to="38"></span>
                                     (0<span class="timer" data-to="67"></span>)
-                                    <span class="timer" data-to="72"></span>
+                                    <span class="timer" data-to="29"></span>
                                     <span class="timer" data-to="757"></span>
                                     <span class="timer" data-to="17"></span>
                                     </a>
@@ -361,7 +361,7 @@
                                 <div class="col-md-4">
                                     <div class="clearfix product">
                                         <div class="col-xs-4 col-sm-4 text-center product-image" id="<?php echo get_the_ID();?>-photo">
-                                            <?php the_post_thumbnail('', array('class' => 'item-about')) ?>
+                                            <?php the_post_thumbnail('', array('class' => 'item-about', 'data-entity' => 'coffee', 'data-role' => "about", 'alt' => get_the_title(), 'data-id' => get_the_ID())); ?>
                                         </div>
                                         <div class="col-sm-8 specs text-left">
                                             <div class="row">
@@ -509,7 +509,7 @@
                                         <div class="coffee-machine-title font-22"><?php the_title(); ?></div>
                                         <div class="coffee-machine-pic">
 			                                <span id="<?php echo get_the_ID();?>-photo">
-				                                <?php the_post_thumbnail('', array('class' => 'item-about')) ?>
+				                                <?php the_post_thumbnail('', array('class' => 'item-about', 'data-entity' => 'coffeemachine', 'data-role' => "about", 'alt' => get_the_title(), 'data-id' => get_the_ID())) ?>
 			                                </span>
 
                                             <div class="hide" id="<?php echo get_the_ID();?>-title">
@@ -524,7 +524,7 @@
                                             <button class="btn btn-default" data-role="about" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
                                                 <b>Аренда без привязки</b>
                                                 <div class="price" id="<?php echo get_the_ID();?>-price">
-                                                   от <?php the_field('rentfree')?> кг.
+                                                   от <?php the_field('rentfree')?> грн\мес.
                                                 </div>
                                             </button>
                                             <button class="btn btn-default" data-role="order" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">

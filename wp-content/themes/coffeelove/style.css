@@ -15,3 +15,16 @@ div.product-description div a{
     color: black;
     text-decoration: none;
 }
+
+.modal-content li{
+    word-break: break-word;
+}
+
+.flip-container:hover .front {
+    opacity: 0;
+}
+
+.front {
+    z-index: 2;
+    transition: all 0.5s;
+}

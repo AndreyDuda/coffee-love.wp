@@ -29,7 +29,7 @@
 							<div data-type="about:price"><strong>Цена</strong>: <?php the_field('price_m') ?> грн</div>
 						</div>
                         <div class="product-description">
-							<div data-type="about:price"><strong>Аренда без привязки</strong>: от <?php the_field('rentfree')?> кг.</div>
+							<div data-type="about:price"><strong>Аренда без привязки</strong>: от <?php the_field('rentfree')?> грн\мес.</div>
 						</div>
 						<div class="price" id="-price"><strong>Аренда</strong>:
 							от <?php the_field('rent') ?> кг
