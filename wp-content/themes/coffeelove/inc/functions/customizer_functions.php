@@ -126,6 +126,17 @@ add_action('customize_register', function($wp_customize) {
 		)
 	);
 
+    $wp_customize->add_setting('spicial-sale',
+        array('default' => 'Аренда без привязки')
+    );
+
+    $wp_customize->add_control('spicial-sale', array(
+            'label'   => 'Название специального предложения',
+            'section' => 'coffee_love',
+            'type'    => 'text',
+        )
+    );
+
 
 
 });

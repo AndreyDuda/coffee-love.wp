@@ -522,12 +522,13 @@
                                         </div>
                                         <div class="coffee-machine-price text-center">
                                             <button class="btn btn-default" data-role="about" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
-                                                <b>Аренда без привязки</b>
+                                                <b><?php echo get_theme_mod('spicial-sale') ?></b>
                                                 <div class="price" id="<?php echo get_the_ID();?>-price">
-                                                   от <?php the_field('rentfree')?> грн\мес.
+                                                    <span style="display:none"><?php echo the_field('price_m') ?> </span>
+                                                   <?php the_field('rentfree')?>
                                                 </div>
                                             </button>
-                                            <button class="btn btn-default" data-role="order" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
+                                            <button class="btn btn-default" data-role="about" data-role="order" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
                                                 <b>Аренда</b>
                                                 <div class="price" id="<?php echo get_the_ID();?>-price">
                                                     <?php the_field('rent')?> кг.
