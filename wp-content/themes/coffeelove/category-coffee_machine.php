@@ -37,7 +37,7 @@
 							<div class="price" id="<?php get_the_ID(); ?>-price">
 								от <?php the_field('rent') ?> кг
 							</div>
-						</button>
+						</button>'alt' => get_the_title()
 					</div>
 				</span>
 						</a>

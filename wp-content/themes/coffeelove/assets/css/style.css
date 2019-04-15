@@ -346,8 +346,8 @@
     overflow: hidden;
 }
 .product .product-image img {
-    max-width: 100px;
-    max-height: 135px
+    max-height: 135px;
+    width: auto;
 }
 .product .specs {
     max-height: 135px;

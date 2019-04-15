@@ -1,7 +1,7 @@
 <?php if (is_home()) : ?>
 <nav class="navbar navbar-custom navbar-fixed-top">
 <?php else: ?>
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-color">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-color qwe">
 <?php endif; ?>
 	<div class="container">
 
@@ -22,16 +22,15 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
 				<?php $link = (!is_home())? home_url() . '/':'';
-				$style = (!is_home())? 'style="color:white;"' : '';
 				?>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#intro">Главная </a></li>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#how-it-works">Как мы работаем</a></li>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#stats">Статистика</a></li>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#about_us">О нас</a></li>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#coffee">Кофе</a></li>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#coffee-machines">АРЕНДА КОФЕМАШИН</a></li>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#clients">Клиенты</a></li>
-                <li><a <?php echo $style; ?> href="<?php echo $link;?>#footer">Контакты</a></li>
+                <li><a href="<?php echo $link;?>#intro">Главная </a></li>
+                <li><a href="<?php echo $link;?>#how-it-works">Как мы работаем</a></li>
+                <li><a href="<?php echo $link;?>#stats">Статистика</a></li>
+                <li><a href="<?php echo $link;?>#about_us">О нас</a></li>
+                <li><a href="<?php echo $link;?>#coffee">Кофе</a></li>
+                <li><a href="<?php echo $link;?>#coffee-machines">АРЕНДА КОФЕМАШИН</a></li>
+                <li><a href="<?php echo $link;?>#clients">Клиенты</a></li>
+                <li><a href="<?php echo $link;?>#footer">Контакты</a></li>
             </ul>
         </div>
     </div>

@@ -19,7 +19,7 @@
                         <div class="row">
                             <a href="<?php the_permalink() ?>" title="<?php the_title();?>">
 			                <span class="text-center catalog-item-image">
-                                <?php the_post_thumbnail('', array()) ?>
+                                <?php the_post_thumbnail('', array('alt' => get_the_title())) ?>
 			                </span>
                                 <span class="text-center">
 				                <span class="title">
