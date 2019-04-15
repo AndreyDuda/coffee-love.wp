@@ -1,11 +1,5 @@
 <?php get_header() ?>
-<!--    <style>
-        .navbar a{
-            color: white;
-        }
-    </style>
 <div class="wrapper">
--->
     <!-- Preloader -->
 <?php if(get_theme_mod('preloader_show')): ?>
     <div id="preloader">
