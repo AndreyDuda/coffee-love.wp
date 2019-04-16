@@ -523,9 +523,9 @@
                                                 </div>
                                             </button>
                                             <button class="btn btn-default" data-role="about" data-role="order" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
-                                                <b>Аренда</b>
+                                                <b><?php echo get_theme_mod('simple-sale') ?></b>
                                                 <div class="price" id="<?php echo get_the_ID();?>-price">
-                                                    <?php the_field('rent')?> кг.
+                                                    <?php the_field('rent')?>
                                                 </div>
                                             </button>
                                         </div>

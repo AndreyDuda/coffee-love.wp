@@ -137,6 +137,17 @@ add_action('customize_register', function($wp_customize) {
         )
     );
 
+    $wp_customize->add_setting('simple-sale',
+        array('default' => 'Аренда')
+    );
+
+    $wp_customize->add_control('simple-sale', array(
+            'label'   => 'Название специального предложения',
+            'section' => 'coffee_love',
+            'type'    => 'text',
+        )
+    );
+
 
 
 });

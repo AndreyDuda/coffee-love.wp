@@ -31,8 +31,8 @@
                         <div class="product-description">
 							<div data-type="about:price"><strong><?php echo get_theme_mod('spicial-sale') ?></strong>: <?php the_field('rentfree')?></div>
 						</div>
-						<div class="price" id="-price"><strong>Аренда</strong>:
-							от <?php the_field('rent') ?> кг
+						<div class="price" id="-price"><strong><?php echo get_theme_mod('simple-sale') ?></strong>:
+							от <?php the_field('rent') ?>
 						</div>
 						<div data-type="about:description">
 							<?php the_content() ?>
