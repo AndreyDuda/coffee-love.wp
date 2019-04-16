@@ -21,8 +21,8 @@
 
             var opts = {},
                 params = {
-                    coffee: ['title', 'description', 'photo', 'price', 'consist', 'strength', 'country', 'type'],
-                    coffeemachine: ['title', 'description', 'photo', 'price']
+                    coffee: ['title', 'description', 'photo', 'price', 'consist', 'strength', 'country'],
+                    coffeemachine: ['title', 'description', 'photo', 'price', 'price-free', 'price-rent']
                 };
 
             for (var i = 0; i < params[type].length; i++) {

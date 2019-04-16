@@ -157,6 +157,8 @@
                 <div class="col-md-7">
                     <div class="row">
                         <div data-type="about:price"></div>
+                        <div data-type="about:price-free"></div>
+                        <div data-type="about:price-rent"></div>
                         <div data-type="about:description"></div>
                     </div>
                 </div>

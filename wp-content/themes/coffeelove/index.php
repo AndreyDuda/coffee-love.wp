@@ -383,8 +383,8 @@
                                                 </div>
 
                                                 <div class="hide" id="<?php echo get_the_ID();?>-country">
-                                                    <strong>Страна</strong>:
-                                                    <?php the_category('country')?>
+
+
                                                 </div>
                                                 <div class="hide" id="<?php echo get_the_ID();?>-type">
                                                     <strong>Тип</strong>:
@@ -517,14 +517,23 @@
                                         <div class="coffee-machine-price text-center">
                                             <button class="btn btn-default" data-role="about" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
                                                 <b><?php echo get_theme_mod('spicial-sale') ?></b>
-                                                <div class="price" id="<?php echo get_the_ID();?>-price">
-                                                    <span style="display:none"><?php echo the_field('price_m') ?> </span>
-                                                   <?php the_field('rentfree')?>
+                                                <div class="price" style="display: none" id="<?php echo get_the_ID();?>-price">
+                                                    Цена : <?php the_field('price_m')?>
+                                                </div>
+                                                <div class="price" style="display: none" id="<?php echo get_the_ID();?>-price-free">
+                                                   <?php echo get_theme_mod('spicial-sale') ?> : <?php the_field('rentfree')?>
+                                                </div>
+                                                <div class="price" >
+                                                    <?php the_field('rentfree')?>
                                                 </div>
                                             </button>
+
                                             <button class="btn btn-default" data-role="about" data-role="order" data-id="<?php echo get_the_ID();?>" data-entity="coffeemachine">
                                                 <b><?php echo get_theme_mod('simple-sale') ?></b>
-                                                <div class="price" id="<?php echo get_the_ID();?>-price">
+                                                <div class="price" style="display: none" id="<?php echo get_the_ID();?>-price-rent">
+                                                    <?php echo get_theme_mod('simple-sale') ?> : <?php the_field('rent')?>
+                                                </div>
+                                                <div class="price">
                                                     <?php the_field('rent')?>
                                                 </div>
                                             </button>
