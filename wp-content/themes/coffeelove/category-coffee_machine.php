@@ -35,7 +35,7 @@
 						<button class="btn btn-default" data-role="order" data-id="<?php get_the_ID(); ?>" data-entity="<?php $category[0]->slug; ?>">
 							<b><?php echo get_theme_mod('simple-sale') ?></b>
 							<div class="price" id="<?php get_the_ID(); ?>-price">
-								от <?php the_field('rent') ?>
+								<?php the_field('rent') ?>
 							</div>
 						</button>
 					</div>

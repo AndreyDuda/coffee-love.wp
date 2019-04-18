@@ -112,7 +112,7 @@ add_action('init', function() {
 
     ));
 
-    register_taxonomy('country_m', array('coffee_machine'), array(
+    /*register_taxonomy('country_m', array('coffee_machine'), array(
         'labels'                => array(
             'name'              => 'Страна',
             'singular_name'     => 'Страна',
@@ -133,9 +133,9 @@ add_action('init', function() {
         'query'                 => array(
             ''
         )
-    ));
+    ));*/
 
-	register_taxonomy('country', array('coffee'), array(
+	/*register_taxonomy('country', array('coffee'), array(
 		'labels'                => array(
 			'name'              => 'Страна',
 			'singular_name'     => 'Страна',
@@ -156,7 +156,7 @@ add_action('init', function() {
 		'query'                 => array(
 			''
 		)
-	));
+	));*/
 
 
 });
