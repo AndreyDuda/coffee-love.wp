@@ -9,9 +9,9 @@
 	            <?php
 	            $coffee = new WP_Query(array(
 		            'post_type' => 'coffee',
-
-		            'order_by' => 'queue',
-		            'order'    => 'ASC'
+                    'meta_key'  => 'queue', // name of custom field
+                    'orderby'   => 'meta_value_num',
+                    'order'     => 'ASC'
 	            ));
 	            ?>
 	            <?php while ($coffee->have_posts()): $coffee->the_post() ?>

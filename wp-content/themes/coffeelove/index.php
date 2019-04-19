@@ -337,9 +337,9 @@
 
                                 $coffee = new WP_Query(array(
                                     'post_type' => 'coffee',
-                                    'posts_per_page' => 18,
-                                    'order_by' => 'queue',
-                                    'order'    => 'ASC'
+                                    'meta_key' => 'queue', // name of custom field
+                                    'orderby' => 'meta_value_num',
+                                    'order' => 'ASC'
                                 ));
                                 $next  = 6;
                                 $index = 0;
@@ -481,9 +481,9 @@
                                 <?php
                                 $coffeemachine = new WP_Query(array(
                                     'post_type' => 'coffee_machine',
-                                    'posts_per_page' => 15,
-                                    'order_by' => 'queue',
-                                    'order'    => 'ASC'
+                                    'meta_key'  => 'queue', // name of custom field
+                                    'orderby'   => 'meta_value_num',
+                                    'order'     => 'ASC'
                                 ));
                                 $next_m = 3;
                                 $index_m = 0;
