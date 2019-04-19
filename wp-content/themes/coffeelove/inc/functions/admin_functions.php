@@ -92,6 +92,30 @@ add_action('init', function() {
 
 	]);
 
+    register_post_type('client_all', [
+        'labels' => [
+            'name'               => 'Клиент', // основное название для типа записи
+            'singular_name'      => 'Клиент', // название для одной записи этого типа
+            'add_new'            => 'Добавить клиента', // для добавления новой записи
+            'add_new_item'       => 'Добавление клиента', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование клиента', // для редактирования типа записи
+            'new_item'           => 'Новый клиент', // текст новой записи
+            'view_item'          => 'Смотреть клиента', // для просмотра записи этого типа.
+            'search_items'       => 'Искать клиента', // для поиска по этим типам записи
+            'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+            'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+            'parent_item_colon'  => '', // для родителей (у древовидных типов)
+            'menu_name'          => 'Клиенты', // название меню
+        ],
+        'public'              => true,
+        'show_in_menu'        => 'coffee-love',
+        'menu_position'       => 4,
+        'menu_icon'           => 'dashicons-format-quote',
+        'hierarchical'        => false,
+        'supports'            => array('title', 'thumbnail'),
+        'show_in_nav_menus'   => true,
+    ]);
+
     register_taxonomy('coffee-type', array('coffee'), array(
         'labels'                => array(
             'name'              => 'Тип кофе',

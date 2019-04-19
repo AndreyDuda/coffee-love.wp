@@ -587,80 +587,20 @@
                     </div>
                     <div class="our-clients-list col-md-9">
                         <div class="row text-center">
+                             <?php
+                                $clients = new WP_Query(array(
+                                    'post_type' => 'client_all',
+
+                                ));?>
+                            <?php while($clients->have_posts()): $clients->the_post(); ?>
                             <div class="col-md-3 col-xs-6">
                                 <div class="row">
                                     <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/photo.jpg.pagespeed.ce.dpLHeY86tD.jpg" title="ctb.centr"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/artbilet.png.pagespeed.ce.uYS3Yiowe_.png" title="Artbilet"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/alfabank2.png.pagespeed.ce._GRJ8fShGa.png" title="Alfabank"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/novatek.png.pagespeed.ce.ICIjqPvsSU.png" title="Novatek"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/Pivasov_logo_250.png.pagespeed.ce.6ra9DXxI0A.png" title="Pivasov"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/fornetti_250_250.png.pagespeed.ce.j9T9cLBfGd.png" title="Fornetti"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/83452.gif.pagespeed.ce.0WziDMSsV9.gif" title="Citrus"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/life.png.pagespeed.ce.cSjx7uzXh5.png" title="Life"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/Privatbank-340x286-d925.jpg.pagespeed.ce.jItxDnZhwo.jpg" title="ПриватБанк"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/pdomSdpXiKk.jpg.pagespeed.ce.MzU7MV2WAx.jpg" title="СБ Агент"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/cibercar.jpg.pagespeed.ce.CSwo9bfg2F.jpg" title="Cibercar"/>
-                                    </div>
-                                </div>
-                            </div><div class="col-md-3 col-xs-6">
-                                <div class="row">
-                                    <div class="client-logo-container">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/Gerb_onpu.gif.pagespeed.ce.GvIX-s5vad.gif" title="ОНПУ"/>
+                                        <?php the_post_thumbnail('', array( 'alt' => get_the_title(), 'title' => get_the_title())) ?>
                                     </div>
                                 </div>
                             </div>
-
+                            <?php endwhile; ?>
                         </div>
                     </div>
                     <?php if(get_theme_mod('sale_show')): ?>
