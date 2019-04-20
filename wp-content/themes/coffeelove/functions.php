@@ -3,6 +3,7 @@
 include_once (__DIR__ . '/inc/functions/admin_functions.php');
 include_once (__DIR__ . '/inc/functions/customizer_functions.php');
 include_once (__DIR__ . '/inc/Menu/Custom_Walker_Nav_Menu.php');
+include_once (__DIR__ . '/inc/Menu/Custom_Walker_Nav_Shop.php');
 
 function get_navigation() {
 	$templates = array();

@@ -302,22 +302,14 @@
                                 <h2 class="light-font">
                                     Кофе
                                     <span class="pull-right">
-								<a href="category/coffee">
+								<a href="<?php echo home_url() ?>/category/coffee">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">
 												КАТАЛОГ КОФЕ
 											</div>
 											<div class="back">
-												<?php
-												wp_nav_menu([
-													'theme_location' => 'coffee',
-													'container'      => null, //удаляем wp теги
-													'item_wrap'      => '%3$s',
-													'walker' => new Custom_Walker_Nav_Menu()
-												]);
-
-												?>
+											    ВОЙТИ В КАТАЛОГ
 											</div>
 										</div>
 									</div>
@@ -449,22 +441,14 @@
                                 <h2 class="light-font">
                                     Аренда Кофемашин
                                     <span class="pull-right">
-								<a href="category/coffeemachines">
+								<a href="<?php echo home_url() ?>/category/coffee_machine">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 										<div class="flipper">
 											<div class="front">
 												КАТАЛОГ КОФЕМАШИН
 											</div>
 											<div class="back">
-												<?php
-												wp_nav_menu([
-													'theme_location' => 'coffeemachine',
-													'container'      => null, //удаляем wp теги
-													'item_wrap'      => '%3$s',
-													'walker' => new Custom_Walker_Nav_Menu()
-												]);
-
-												?>
+												ВОЙТИ В КАТАЛОГ
 											</div>
 										</div>
 									</div>
