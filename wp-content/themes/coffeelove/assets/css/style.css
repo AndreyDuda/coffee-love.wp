@@ -407,8 +407,8 @@
     text-transform: uppercase;
 }
 #coffee-machines .coffee-machine .coffee-machine-pic img {
-    max-width: 230px;
-    max-height: 230px;
+    width: auto;
+    height: 230px;
     margin: 30px 0 10px;
     transition: all 0.3s;
 }

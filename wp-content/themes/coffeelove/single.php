@@ -48,7 +48,7 @@
                             </div>
                             <div data-type="about:country">
                                 <strong>Страна</strong>:
-                                <?php the_terms('', 'country') ?>
+                                <?php the_field('country') ?>
                             </div>
                             <div data-type="about:description">
                                 <?php the_content() ?>

@@ -14,7 +14,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a href="" class="navbar-logo" style="display: none;">
-				<img src="<?php echo get_template_directory_uri() ?>/assets/image/logo_catalog.png.pagespeed.ce.C22KUBTLun.png" alt="Coffee-Love для любителей кофе">
+				<img src="<?php echo get_template_directory_uri() ?>/assets/image/logo_catalog.png" alt="Coffee-Love для любителей кофе">
 			</a>
 		</div>
 

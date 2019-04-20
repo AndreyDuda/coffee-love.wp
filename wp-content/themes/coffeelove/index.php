@@ -243,7 +243,7 @@
                         <div class="col-md-6 step-3 wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.1s">
                             <div class="row padding-10">
                                 <p>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/coffee-bean.png.pagespeed.ce.PAfQc5zKQo.png" style="height: 26px;"/>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/coffee-bean.png" style="height: 26px;"/>
                                     Сотрудничая с нами, Вы получаете широкий ассортимент лучших сортов натурального кофе в Одессе.
                                 </p>
                             </div>
@@ -261,7 +261,7 @@
                         <div class="col-md-6 step-4 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.1s">
                             <div class="row padding-10">
                                 <p>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/timemachine.png.pagespeed.ce.1YAnhn1FRb.png" style="height: 34px;"/>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/timemachine.png" style="height: 34px;"/>
                                     Вы сами выбираете сроки аренды кофемашины.
                                 </p>
                             </div>
@@ -495,7 +495,7 @@
                                             </div>
                                             <div class="hide" id="<?php echo get_the_ID();?>-description">
                                                <?php echo the_content() ?>
-                                                <p><strong style="line-height: 1.5;">Страна производитель</strong><span style="line-height: 1.5;">: <?php the_field('country_m') ?></span></p>
+                                                <p><strong style="line-height: 1.5;">Страна производитель</strong><span style="line-height: 1.5;">: <?php the_field('country') ?></span></p>
                                             </div>
                                         </div>
                                         <div class="coffee-machine-price text-center">
