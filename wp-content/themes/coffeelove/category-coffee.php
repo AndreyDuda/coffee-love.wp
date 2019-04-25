@@ -44,7 +44,12 @@
 					            }
 					            ?>
 				            </span>
+                                    <span>
+                                         <strong>Страна</strong>:
+                                <?php the_field('country') ?>
+                                    </span>
 			            </span>
+
                             </a></div>
                     </div>
 	            <?php endwhile; wp_reset_postdata();?>
